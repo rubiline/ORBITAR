@@ -1,0 +1,54 @@
+{
+    "name": "GB",
+    "maps": [
+        {
+            "name": "Gameplay",
+            "id": "f29c213b-aff3-4c7d-9db7-ed3772c1a6a2",
+            "actions": [
+                {
+                    "name": "A",
+                    "type": "Button",
+                    "id": "b5e1437a-f883-4dd5-9a32-ea36cfcdc422",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "B",
+                    "type": "Button",
+                    "id": "3d5180bc-62b3-4e6a-bffb-8bb4edba5c8f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "62326245-796d-4392-861c-af6017a69b79",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "A",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "914e4667-f8b7-4e31-bdb4-518a458e922b",
+                    "path": "<Keyboard>/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "B",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
