@@ -84,8 +84,10 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         currentAngularVelocity = angularSpeed * Time.deltaTime;
-        rb.SetRotation(rb.rotation + currentAngularVelocity * spin);
-        rb.MovePosition(rb.position + (Vector2)movementVector * Time.deltaTime);
+        //rb.SetRotation(rb.rotation + currentAngularVelocity * spin);
+        //rb.MovePosition(rb.position + (Vector2)movementVector * Time.deltaTime);
+        this.transform.position = this.transform.position + (movementVector * Time.deltaTime);
+        this.transform.eulerAngles = this.transform.eulerAngles + new Vector3(0, 0, currentAngularVelocity * spin);
     }
 
     private Vector3 Quantize(Vector3 vector, int segments)
