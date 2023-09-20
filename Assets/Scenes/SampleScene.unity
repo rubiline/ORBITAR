@@ -315,6 +315,7 @@ GameObject:
   - component: {fileID: 1401930922}
   - component: {fileID: 1401930921}
   - component: {fileID: 1401930923}
+  - component: {fileID: 1401930924}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -334,8 +335,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0bac1358bdd2c9429d81af2ba8092b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 1401930924}
   angularSpeed: 180
-  linearSpeed: 1
+  linearSpeed: 0
   sun: {fileID: 322541507}
   moon: {fileID: 1628413865}
 --- !u!4 &1401930922
@@ -429,6 +431,27 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!50 &1401930924
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401930920}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1628413864
 GameObject:
   m_ObjectHideFlags: 0
