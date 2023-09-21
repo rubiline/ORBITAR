@@ -4845,6 +4845,7 @@ GameObject:
   - component: {fileID: 6359292765949203567}
   - component: {fileID: 8796508410356845498}
   - component: {fileID: 5471389361510837841}
+  - component: {fileID: 7446761809360564068}
   m_Layer: 0
   m_Name: Moon
   m_TagString: Untagged
@@ -4906,8 +4907,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -890503633
+  m_SortingLayer: 4
   m_SortingOrder: 10
   m_Sprite: {fileID: 300774369, guid: 2397aeab091ee92498e52a054e972553, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4995,6 +4996,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba82b987f9839be44b25e5a83288f8f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7446761809360564068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2213831442652220954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb618040b24a58445b63c0493c19c09c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1784346265515224257}
+  moon: 1
 --- !u!1 &2795255654483023396
 GameObject:
   m_ObjectHideFlags: 0
@@ -9937,6 +9952,7 @@ GameObject:
   - component: {fileID: 7345821614597666083}
   - component: {fileID: 2596737557635888124}
   - component: {fileID: 7200450514676195457}
+  - component: {fileID: 2535091407784174481}
   m_Layer: 0
   m_Name: Sun
   m_TagString: Untagged
@@ -10010,8 +10026,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -890503633
+  m_SortingLayer: 4
   m_SortingOrder: 10
   m_Sprite: {fileID: -283451841, guid: 2397aeab091ee92498e52a054e972553, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -10087,6 +10103,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba82b987f9839be44b25e5a83288f8f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2535091407784174481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6783901059536499952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb618040b24a58445b63c0493c19c09c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1784346265515224257}
+  moon: 0
 --- !u!1 &6896484763786481029
 GameObject:
   m_ObjectHideFlags: 0
@@ -10144,7 +10174,9 @@ MonoBehaviour:
   minimumOffset: 0.5
   maximumOffset: 1.75
   sun: {fileID: 1105678764957230184}
+  SunGrounded: 0
   moon: {fileID: 8177915327600657702}
+  MoonGrounded: 0
   sunSprite: {fileID: 2596737557635888124}
   moonSprite: {fileID: 8796508410356845498}
   movementVector: {x: 0, y: 0, z: 0}
