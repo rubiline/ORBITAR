@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9e040f91929ba4b48888d1f7707dc890
+guid: 70a39caf7346360408044d4c84fe46c0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2468184459646274761
-    second: nondescript dark_0
+      213: -857013017290436646
+    second: checker wall_0
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -48,7 +48,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
@@ -83,7 +83,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -95,7 +95,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Standalone
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -110,7 +122,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: nondescript dark_0
+      name: checker wall_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +136,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cc0b5560b0c04220800000000000000
-      internalID: 2468184459646274761
+      spriteID: 71f78cb1ec6a55348ad1b7681e72368e
+      internalID: 648662292
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_1
+      name: checker wall_1
       rect:
         serializedVersion: 2
         x: 16
@@ -145,14 +157,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a46cc659faa4cd48bcd51e0a497475a
-      internalID: 1756907965
+      spriteID: e474cc9edf747284aa9cd7db1d73fbae
+      internalID: 1482120240
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_2
+      name: checker wall_2
       rect:
         serializedVersion: 2
         x: 32
@@ -166,14 +178,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b8dae0a06cc64f42b68617f3a8db443
-      internalID: 1106332077
+      spriteID: 21d0fa0231cbba343a03e0973be845d2
+      internalID: -1976205443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_3
+      name: checker wall_3
       rect:
         serializedVersion: 2
         x: 48
@@ -187,14 +199,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 841adf86661d4dc4e922cfc32791b476
-      internalID: 1316352186
+      spriteID: b0835b9be7bdf554089695383d685c92
+      internalID: 47559626
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_4
+      name: checker wall_4
       rect:
         serializedVersion: 2
         x: 64
@@ -209,17 +221,16 @@ TextureImporter:
       - - {x: -8, y: -8}
         - {x: 8, y: -8}
         - {x: 8, y: 8}
-        - {x: 0, y: 0}
       tessellationDetail: 0
       bones: []
-      spriteID: cff41e57cd91ba14ebcbd565c2b81d69
-      internalID: 1647601082
+      spriteID: f624eec86b2a37545b6f93486c8cb4d6
+      internalID: 554774418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_5
+      name: checker wall_5
       rect:
         serializedVersion: 2
         x: 80
@@ -231,20 +242,19 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: -8}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
         - {x: 8, y: -8}
-        - {x: 0, y: 0}
-        - {x: -8, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: b135f060e415e9c468e380ea2d831859
-      internalID: -946918195
+      spriteID: 660c0601db32a0e43a7aee1a09732c40
+      internalID: 1571051220
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_6
+      name: checker wall_6
       rect:
         serializedVersion: 2
         x: 96
@@ -255,21 +265,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-        - {x: -3, y: 3}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1b6150b8210537429326c1a6b26a2de
-      internalID: 33944214
+      spriteID: 6f4d6b982b8caa6419d37dcb45843893
+      internalID: -707718723
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_7
+      name: checker wall_7
       rect:
         serializedVersion: 2
         x: 112
@@ -280,21 +286,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 3, y: 3}
-        - {x: -8, y: 8}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c68da94914f061b44ae8a48b998109cf
-      internalID: -293476864
+      spriteID: ee84e519352e48744ab09f3037de695f
+      internalID: 630014354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_8
+      name: checker wall_8
       rect:
         serializedVersion: 2
         x: 128
@@ -306,20 +308,20 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -6, y: -8}
+      - - {x: -1, y: 1}
+        - {x: -6, y: -8}
         - {x: 8, y: -8}
         - {x: 8, y: 6}
-        - {x: -1, y: 1}
       tessellationDetail: 0
       bones: []
-      spriteID: 60c8453272f81ed4b87db5315325234a
-      internalID: 1066785523
+      spriteID: 9a6a71f4f6446154c9334444b3facebb
+      internalID: -1240908563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_9
+      name: checker wall_9
       rect:
         serializedVersion: 2
         x: 144
@@ -331,21 +333,21 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 0.23997498, y: 8}
+      - - {x: 0, y: 8}
         - {x: -8, y: 6}
         - {x: -8, y: -8}
         - {x: 8, y: -8}
         - {x: 8, y: 6}
       tessellationDetail: 0
       bones: []
-      spriteID: 174587ca2ebb4554f9118c5c39c86f58
-      internalID: -1173698225
+      spriteID: 660f5fe4bb4cab4428179665d833d883
+      internalID: 413476986
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_10
+      name: checker wall_10
       rect:
         serializedVersion: 2
         x: 160
@@ -363,14 +365,14 @@ TextureImporter:
         - {x: 1, y: 1}
       tessellationDetail: 0
       bones: []
-      spriteID: 03de8eb318fb46546a26488d0456fd64
-      internalID: 2019313055
+      spriteID: 1ef8788335ef4174382f4b1d7b9a3dc6
+      internalID: 1838059478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_11
+      name: checker wall_11
       rect:
         serializedVersion: 2
         x: 0
@@ -384,14 +386,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 206e28049b1dbba478c50bc237637af4
-      internalID: -653011661
+      spriteID: 159148ee391b6c04c85355b2ef9798b1
+      internalID: 1001236236
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_12
+      name: checker wall_12
       rect:
         serializedVersion: 2
         x: 16
@@ -405,14 +407,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34b3f2473e63a3e4587749ba353e6486
-      internalID: -1466885074
+      spriteID: 4c56e53729ac73d4695b2a0124f9dcec
+      internalID: -2094038758
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_13
+      name: checker wall_13
       rect:
         serializedVersion: 2
         x: 32
@@ -426,14 +428,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51bf3d2f75e084943a70eedb09818bbf
-      internalID: -1672319015
+      spriteID: 8f4aed2ec626bbe4a8c4a2a99fa33767
+      internalID: 1012527087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_14
+      name: checker wall_14
       rect:
         serializedVersion: 2
         x: 48
@@ -447,14 +449,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e033dfcc367dd6428ee2188037d75b1
-      internalID: -623264846
+      spriteID: f21bae2c23106f94da15cb93043ae6e1
+      internalID: -624933200
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_15
+      name: checker wall_15
       rect:
         serializedVersion: 2
         x: 64
@@ -466,20 +468,19 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 0, y: 0}
+      - - {x: -8, y: 8}
         - {x: 8, y: -8}
         - {x: 8, y: 8}
-        - {x: -8, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: f736f727a2b0b9349935af5a521fbed3
-      internalID: 1739416393
+      spriteID: 3e19afad9952e914a8ec1d897bd797ef
+      internalID: -914580053
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_16
+      name: checker wall_16
       rect:
         serializedVersion: 2
         x: 80
@@ -491,20 +492,19 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: -8}
-        - {x: 0, y: 0}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
         - {x: 8, y: 8}
-        - {x: -8, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: ad7bb2c2125d7fc48bcadd65bd884247
-      internalID: 2008557240
+      spriteID: fc151a4434028214498a740e650b2d90
+      internalID: -1534163566
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_17
+      name: checker wall_17
       rect:
         serializedVersion: 2
         x: 96
@@ -515,21 +515,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -3, y: -3}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-        - {x: -8, y: 8}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98e7a4f3a4695a5499eab236c22fdd63
-      internalID: 1130834446
+      spriteID: 1e87a25883141f2499c76c04db9a654e
+      internalID: 18331797
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_18
+      name: checker wall_18
       rect:
         serializedVersion: 2
         x: 112
@@ -540,21 +536,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: 3, y: -3}
-        - {x: 8, y: 8}
-        - {x: -8, y: 8}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2414ada6b8ff084da98abdfa55172af
-      internalID: -1903105613
+      spriteID: d129f28d47df22a4990c97a0cbd2bfd0
+      internalID: -750972212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_19
+      name: checker wall_19
       rect:
         serializedVersion: 2
         x: 128
@@ -567,20 +559,20 @@ TextureImporter:
       outline: []
       physicsShape:
       - - {x: -6, y: 8}
-        - {x: -7.9999847, y: 0.000015258789}
+        - {x: -7.9999847, y: 0.2399826}
         - {x: -6, y: -8}
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: ad3c26f62aa4cdc44aeaba3122ca7230
-      internalID: -761717914
+      spriteID: e4cd5d41d21651947a08c3ee573391fd
+      internalID: -1586845267
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_20
+      name: checker wall_20
       rect:
         serializedVersion: 2
         x: 144
@@ -591,17 +583,29 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
+      - - {x: -7, y: -2}
+        - {x: -7, y: 2}
+        - {x: -2, y: 7}
+        - {x: 2, y: 7}
+        - {x: 7, y: 2}
+        - {x: 7, y: -2}
+        - {x: 2, y: -7}
+        - {x: -2, y: -7}
       tessellationDetail: 0
       bones: []
-      spriteID: aa65100204d02394fac849e887dfb409
-      internalID: 1495961897
+      spriteID: 08b914f9cc2aa9f4396c7c5a35086718
+      internalID: -2023089968
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_21
+      name: checker wall_21
       rect:
         serializedVersion: 2
         x: 160
@@ -616,18 +620,18 @@ TextureImporter:
       - - {x: -8, y: 8}
         - {x: -8, y: -8}
         - {x: 6, y: -8}
-        - {x: 8, y: -0.23997498}
+        - {x: 8, y: -0.0000076293945}
         - {x: 6, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: d04e45eba6e09b648bc60fad5b209d08
-      internalID: -2059306266
+      spriteID: cee94d66b7c88974c8211e4954a3dfa1
+      internalID: -1753444050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_22
+      name: checker wall_22
       rect:
         serializedVersion: 2
         x: 0
@@ -641,14 +645,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f02b6108556bd1a49839054ab38805e1
-      internalID: -125650928
+      spriteID: 105cefd8cd095c54d91c2bc1f87a8bef
+      internalID: 1146997135
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_23
+      name: checker wall_23
       rect:
         serializedVersion: 2
         x: 16
@@ -662,14 +666,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ecbf2d3768f5084fbe959c211f2a22b
-      internalID: 1054204761
+      spriteID: 5ded1fe23b3e57b4296846993020c471
+      internalID: 1482325195
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_24
+      name: checker wall_24
       rect:
         serializedVersion: 2
         x: 32
@@ -683,14 +687,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd364400ede337748ba53d194538c952
-      internalID: 1139090718
+      spriteID: a7ea3d032651a2646ab9c5d639c9cae5
+      internalID: -586896467
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_25
+      name: checker wall_25
       rect:
         serializedVersion: 2
         x: 48
@@ -704,14 +708,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eece8aeba6a9ce14fa7cbb10e2df34e7
-      internalID: -2122907351
+      spriteID: 788e51830175b434f8a3904ac9c94e0c
+      internalID: 1801921884
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_26
+      name: checker wall_26
       rect:
         serializedVersion: 2
         x: 64
@@ -723,22 +727,22 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: -2}
-        - {x: -1.9036179, y: -7.9999924}
+      - - {x: -2, y: 8}
+        - {x: -8, y: 2}
+        - {x: -8, y: -2}
+        - {x: -2, y: -8}
         - {x: 8, y: -8}
         - {x: 8, y: 8}
-        - {x: -1.9036102, y: 8}
-        - {x: -8, y: 2}
       tessellationDetail: 0
       bones: []
-      spriteID: 9efebbb395421c640ae41ee521891cf5
-      internalID: -615106274
+      spriteID: 73fdc6591b3e92143ac085a0a9ce9c92
+      internalID: -61535033
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_27
+      name: checker wall_27
       rect:
         serializedVersion: 2
         x: 80
@@ -756,16 +760,16 @@ TextureImporter:
         - {x: 8, y: -2}
         - {x: 8, y: 2}
         - {x: 2, y: 8}
-      tessellationDetail: 0.1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2d682c38430eb6d448c47675e44e66a8
-      internalID: 132885972
+      spriteID: 7ac2582587971fb4dbed1758f174911e
+      internalID: -198802995
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_28
+      name: checker wall_28
       rect:
         serializedVersion: 2
         x: 96
@@ -776,21 +780,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -8, y: 8}
-        - {x: -8, y: -8}
-        - {x: -3, y: 3}
-        - {x: 8, y: 8}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bdf0e23efc500b946a5342bb9ca89e1c
-      internalID: 415900407
+      spriteID: f89c39181e7d1904788eec8ddf876435
+      internalID: -479432860
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_29
+      name: checker wall_29
       rect:
         serializedVersion: 2
         x: 112
@@ -801,21 +801,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: 3, y: 3}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-        - {x: -8, y: 8}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3773fa0b1999c8e4fac23cf142104580
-      internalID: -526784119
+      spriteID: 9c3d1a2af2a80ed4c9416516bd74dd05
+      internalID: -1424535251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_30
+      name: checker wall_30
       rect:
         serializedVersion: 2
         x: 128
@@ -833,14 +829,14 @@ TextureImporter:
         - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: 9e20f7d2c30caa4408d4f974e564dbb6
-      internalID: 283849103
+      spriteID: 291d151115ac2884eaf38f803a8d7942
+      internalID: -925629506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_31
+      name: checker wall_31
       rect:
         serializedVersion: 2
         x: 144
@@ -859,14 +855,14 @@ TextureImporter:
         - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: 468a3c93ecb7dd742a4843bda719ee41
-      internalID: 1072338826
+      spriteID: 21051c5074c180748a303d6e525c1a19
+      internalID: -1416469048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_32
+      name: checker wall_32
       rect:
         serializedVersion: 2
         x: 160
@@ -878,20 +874,20 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: -6}
+      - - {x: -8, y: 8}
+        - {x: -8, y: -6}
         - {x: 1, y: -1}
         - {x: 6, y: 8}
-        - {x: -8, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: be57c850fa49e544385a1e1159314278
-      internalID: -460540558
+      spriteID: ca91af72beca5bc44b7e270ba4a8337b
+      internalID: 21823257
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_33
+      name: checker wall_33
       rect:
         serializedVersion: 2
         x: 0
@@ -905,14 +901,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2280fa819f4e8ec41b24e745172d9977
-      internalID: 551013423
+      spriteID: 56378fbd5ae51d24c9dc98f99642cab5
+      internalID: 417905377
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_34
+      name: checker wall_34
       rect:
         serializedVersion: 2
         x: 16
@@ -926,14 +922,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d850603ecf6895c42835f3970e61b95f
-      internalID: 425162071
+      spriteID: da552d37c9b3ee0479bdcc7963ff044b
+      internalID: 1959560504
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_35
+      name: checker wall_35
       rect:
         serializedVersion: 2
         x: 32
@@ -947,14 +943,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d0db3b0ed4666349a260a57eec7ea22
-      internalID: -575349369
+      spriteID: f1637c0656a902e429381c770bb53a76
+      internalID: 708130764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_36
+      name: checker wall_36
       rect:
         serializedVersion: 2
         x: 48
@@ -968,14 +964,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c9a16e5c53dd34408bac2f2afcd5553
-      internalID: -1127006708
+      spriteID: c77c595c988f54e43a4c5e3830eda6c2
+      internalID: 541105849
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_37
+      name: checker wall_37
       rect:
         serializedVersion: 2
         x: 64
@@ -995,14 +991,14 @@ TextureImporter:
         - {x: 2, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: 93c1f52753f360948a12becc799233fd
-      internalID: -773929265
+      spriteID: 756ccd4486d41a94ab20453a48eeacea
+      internalID: 1506669565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_38
+      name: checker wall_38
       rect:
         serializedVersion: 2
         x: 80
@@ -1022,14 +1018,14 @@ TextureImporter:
         - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: 84f155a51b9f75d488caa75636590720
-      internalID: 1559181578
+      spriteID: fbb7d80268ec2634f8b535d81abdaf67
+      internalID: 849347975
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_39
+      name: checker wall_39
       rect:
         serializedVersion: 2
         x: 96
@@ -1040,21 +1036,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: -3, y: -3}
-        - {x: -8, y: 8}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: caf971d7267588347a377c6f3532bdb0
-      internalID: 2081591998
+      spriteID: eb6decfa1e9888041855cafd541c0687
+      internalID: -279606889
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_40
+      name: checker wall_40
       rect:
         serializedVersion: 2
         x: 112
@@ -1065,21 +1057,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: 8, y: -8}
-        - {x: 8, y: 8}
-        - {x: 3, y: -3}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6fdea21203ad8141a97b7417ac405bf
-      internalID: 2014938543
+      spriteID: 965eb067f4feec34d88a8cc6521028ea
+      internalID: -888329098
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_41
+      name: checker wall_41
       rect:
         serializedVersion: 2
         x: 128
@@ -1094,19 +1082,19 @@ TextureImporter:
       - - {x: -8, y: 8}
         - {x: -8, y: -8}
         - {x: -6, y: -8}
-        - {x: 0, y: 0}
+        - {x: -1, y: 1}
         - {x: 8, y: 6}
         - {x: 8, y: 8}
-      tessellationDetail: 0
+      tessellationDetail: 0.62
       bones: []
-      spriteID: 505ac1f769c92bb499a45f23f86fc4f1
-      internalID: 683845189
+      spriteID: 20cd7ee14d11d3a4889a1c93a54928e2
+      internalID: -475106884
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_42
+      name: checker wall_42
       rect:
         serializedVersion: 2
         x: 144
@@ -1120,18 +1108,19 @@ TextureImporter:
       physicsShape:
       - - {x: -8, y: 8}
         - {x: -8, y: 6}
+        - {x: 0, y: 7}
         - {x: 8, y: 6}
         - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: 6d25cacac3a22714ea7b6233a4d8a0de
-      internalID: 63708046
+      spriteID: a2362484397e974499dc2eba308c09f1
+      internalID: 50196887
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_43
+      name: checker wall_43
       rect:
         serializedVersion: 2
         x: 160
@@ -1145,20 +1134,20 @@ TextureImporter:
       physicsShape:
       - - {x: -8, y: 8}
         - {x: -8, y: 6}
-        - {x: 0, y: 0}
+        - {x: 1, y: 1}
         - {x: 6, y: -8}
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: ae8147ca51a5e634686c49d6b50a2f25
-      internalID: 413947890
+      spriteID: 78e2a3d620f598e4bbf520dbac287afc
+      internalID: -1276641940
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_44
+      name: checker wall_44
       rect:
         serializedVersion: 2
         x: 0
@@ -1170,20 +1159,20 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 2, y: -2}
-        - {x: -3, y: -8}
+      - - {x: -3, y: -8}
         - {x: 8, y: -8}
         - {x: 8, y: 3}
+        - {x: 2, y: -2}
       tessellationDetail: 0
       bones: []
-      spriteID: 6ecbfb55ef8834f4596f1d2a4606a8d9
-      internalID: -349067227
+      spriteID: 9854a8c2e8f98f74db160e2a1e6d670d
+      internalID: 1051353467
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_45
+      name: checker wall_45
       rect:
         serializedVersion: 2
         x: 16
@@ -1202,14 +1191,14 @@ TextureImporter:
         - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: 482ce1385fc8c0b44808746e930fa8d6
-      internalID: -2018881780
+      spriteID: b3d0aedbb454bde43a44d63f588d5e94
+      internalID: 1399871326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_46
+      name: checker wall_46
       rect:
         serializedVersion: 2
         x: 32
@@ -1228,14 +1217,14 @@ TextureImporter:
         - {x: 1, y: 6}
       tessellationDetail: 0
       bones: []
-      spriteID: cc337c3d78687414ea0f49719c75b44d
-      internalID: -1657612236
+      spriteID: f69e9b97628aab84b88b1217a43d7ab3
+      internalID: -1417996920
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_47
+      name: checker wall_47
       rect:
         serializedVersion: 2
         x: 48
@@ -1253,14 +1242,14 @@ TextureImporter:
         - {x: -8, y: 3}
       tessellationDetail: 0
       bones: []
-      spriteID: 967b49a6df7e66548b942fee12dd0d50
-      internalID: 704501969
+      spriteID: 20fc7ecbad85f0d46831dece2d00c3b2
+      internalID: 8861788
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_48
+      name: checker wall_48
       rect:
         serializedVersion: 2
         x: 64
@@ -1275,18 +1264,19 @@ TextureImporter:
       - - {x: -8, y: 8}
         - {x: -8, y: -8}
         - {x: -3, y: -8}
+        - {x: 2, y: -2}
         - {x: 8, y: 3}
         - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: fa53433daa75d1a40bc543bcc4d72173
-      internalID: -693972851
+      spriteID: 723947937893f0043a9b22b12317a8d4
+      internalID: -624732143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_49
+      name: checker wall_49
       rect:
         serializedVersion: 2
         x: 80
@@ -1300,17 +1290,19 @@ TextureImporter:
       physicsShape:
       - - {x: -8, y: 8}
         - {x: -8, y: 3}
+        - {x: -1, y: 6}
+        - {x: 8, y: 7}
         - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: 863444c18ab805f4f9731ab2e4c95093
-      internalID: 1920933949
+      spriteID: a45c65d0ce06c164d96317718bb40bb3
+      internalID: 1713367415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_50
+      name: checker wall_50
       rect:
         serializedVersion: 2
         x: 96
@@ -1323,18 +1315,20 @@ TextureImporter:
       outline: []
       physicsShape:
       - - {x: -8, y: 8}
+        - {x: -8, y: 7}
+        - {x: 1, y: 6}
         - {x: 8, y: 3}
         - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: 58b8381f46a35d2478a562f63e26c3fe
-      internalID: -1938401203
+      spriteID: 342711c35f58661479db40baa6e56044
+      internalID: 149882291
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_51
+      name: checker wall_51
       rect:
         serializedVersion: 2
         x: 112
@@ -1348,19 +1342,20 @@ TextureImporter:
       physicsShape:
       - - {x: -8, y: 8}
         - {x: -8, y: 3}
+        - {x: -2, y: -2}
         - {x: 3, y: -8}
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: 9b6378d2250791d4b8272d38fdae9138
-      internalID: 826715807
+      spriteID: 5977e9fc7c3c55c4492c4518d47e2ae9
+      internalID: 824054671
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_52
+      name: checker wall_52
       rect:
         serializedVersion: 2
         x: 128
@@ -1375,17 +1370,47 @@ TextureImporter:
       - - {x: -8, y: 8}
         - {x: -8, y: -8}
         - {x: -6, y: -8}
+        - {x: -7, y: 0}
         - {x: -6, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: 526f85b90c9bb2446ab2b385cff09f9b
-      internalID: -981546253
+      spriteID: b7762eba50404354a8f76bf2110adab9
+      internalID: 2097868425
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_53
+      name: checker wall_53
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -2, y: 8}
+        - {x: -8, y: 2}
+        - {x: -8, y: -2}
+        - {x: -2, y: -8}
+        - {x: 2, y: -8}
+        - {x: 8, y: -2}
+        - {x: 8, y: 2}
+        - {x: 2, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53bf6ec865c1c194391e0b503b3ee1c6
+      internalID: 1671606459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: checker wall_54
       rect:
         serializedVersion: 2
         x: 160
@@ -1398,19 +1423,20 @@ TextureImporter:
       outline: []
       physicsShape:
       - - {x: 6, y: 8}
+        - {x: 7, y: 0}
         - {x: 6, y: -8}
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: 6cdf951cdd4e9ea4f9de33e6aa358398
-      internalID: 907455778
+      spriteID: 97cd64148cad00b418ab35c5c8ee6eaf
+      internalID: 1515488356
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_54
+      name: checker wall_55
       rect:
         serializedVersion: 2
         x: 0
@@ -1421,17 +1447,22 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -3, y: 8}
+        - {x: -6, y: 1}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: c6b89a37b08488641b70e8528999bc1c
-      internalID: -1336047766
+      spriteID: 59ff5633505ee6c44b36bd39045f7bc6
+      internalID: 782694576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_55
+      name: checker wall_56
       rect:
         serializedVersion: 2
         x: 16
@@ -1442,17 +1473,24 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: -7, y: -8}
+        - {x: -5, y: 0}
+        - {x: 0, y: 5}
+        - {x: 8, y: 7}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: 6560d64f45af0f9439af6118e40a0ce6
-      internalID: -1472970733
+      spriteID: 8de28dc6c770764459d4051f35fd2826
+      internalID: -1629313410
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_56
+      name: checker wall_57
       rect:
         serializedVersion: 2
         x: 32
@@ -1463,17 +1501,24 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -8, y: 7}
+        - {x: 0, y: 5}
+        - {x: 5, y: 0}
+        - {x: 7, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: e258780f7c13826409025c94602cfc84
-      internalID: 536304239
+      spriteID: d93623aa78e43b14c98f12cf3c374021
+      internalID: -51151375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_57
+      name: checker wall_58
       rect:
         serializedVersion: 2
         x: 48
@@ -1492,14 +1537,14 @@ TextureImporter:
         - {x: 3, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: ea200e983ad6fc84c86ba671a607c982
-      internalID: 1036559667
+      spriteID: 1b91a88fc7fa13b438194e571cc01d58
+      internalID: 2082599287
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_58
+      name: checker wall_59
       rect:
         serializedVersion: 2
         x: 64
@@ -1513,17 +1558,73 @@ TextureImporter:
       physicsShape:
       - - {x: -8, y: 8}
         - {x: -8, y: -8}
+        - {x: -7, y: -8}
+        - {x: -6, y: 1}
         - {x: -3, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: e6196a70da4030643971d7a423f03afd
-      internalID: 978940366
+      spriteID: ac5d9bb0702a1584a992a8e72039968a
+      internalID: -1093660323
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_59
+      name: checker wall_60
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 6}
+        - {x: -3, y: 3}
+        - {x: -6, y: -2}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6604515f4df34c4e867b52b2e7ad761
+      internalID: 1191617076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: checker wall_61
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 6, y: -2}
+        - {x: 3, y: 3}
+        - {x: -2, y: 6}
+      tessellationDetail: 0
+      bones: []
+      spriteID: deaec4fc656d87442b4e85c6738fccaf
+      internalID: -620601766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: checker wall_62
       rect:
         serializedVersion: 2
         x: 112
@@ -1536,18 +1637,20 @@ TextureImporter:
       outline: []
       physicsShape:
       - - {x: 3, y: 8}
+        - {x: 6, y: 1}
+        - {x: 7, y: -8}
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: 5c4d638184a6bd743bf2f78975f5c57f
-      internalID: 1733522713
+      spriteID: 96bc8c878cfb3dc4c8c3e1e8c124d2b8
+      internalID: 484440429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_60
+      name: checker wall_63
       rect:
         serializedVersion: 2
         x: 128
@@ -1563,18 +1666,18 @@ TextureImporter:
         - {x: -8, y: -8}
         - {x: 8, y: -8}
         - {x: 8, y: -6}
-        - {x: 0, y: 0}
+        - {x: -1, y: -1}
         - {x: -6, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: b7a842c57b5aa474f9ca49634ebeca15
-      internalID: -186128401
+      spriteID: fc66caf61608d8e43a83bf59036d320a
+      internalID: -7966155
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_61
+      name: checker wall_64
       rect:
         serializedVersion: 2
         x: 144
@@ -1586,20 +1689,21 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: -8, y: -6}
+      - - {x: 0, y: -7}
+        - {x: -8, y: -6}
         - {x: -8, y: -8}
         - {x: 8, y: -8}
         - {x: 8, y: -6}
       tessellationDetail: 0
       bones: []
-      spriteID: 3d815c4bafaf9544f8aea2fe4ffdda79
-      internalID: -925565478
+      spriteID: 5b4348a088c40ae42b8dc00685ee62fe
+      internalID: 1336193843
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_62
+      name: checker wall_65
       rect:
         serializedVersion: 2
         x: 160
@@ -1612,21 +1716,21 @@ TextureImporter:
       outline: []
       physicsShape:
       - - {x: 6, y: 8}
-        - {x: 0, y: 0}
+        - {x: 1, y: -1}
         - {x: -8, y: -6}
         - {x: -8, y: -8}
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: a3e2ef634d38a7e4999f3ed62fa9f49f
-      internalID: 1819664761
+      spriteID: 46ce7819ffd9afa47b7ca7ca758837b6
+      internalID: -687182929
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_63
+      name: checker wall_66
       rect:
         serializedVersion: 2
         x: 0
@@ -1637,17 +1741,22 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -6, y: -1}
+        - {x: -3, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: b1a6434b169352f43b95f418df449385
-      internalID: 788967788
+      spriteID: aaac7fcf9d6218b468928e2c8b0b59d4
+      internalID: 1749758173
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_64
+      name: checker wall_67
       rect:
         serializedVersion: 2
         x: 16
@@ -1658,17 +1767,24 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 0, y: -5}
+        - {x: -5, y: 0}
+        - {x: -7, y: 8}
+        - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: -7}
       tessellationDetail: 0
       bones: []
-      spriteID: ac9177cce0fdf1d4caf130cf2755e7aa
-      internalID: -446262334
+      spriteID: 4ce57c1275e73fe4d8f0894921f88b12
+      internalID: 2082712016
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_65
+      name: checker wall_68
       rect:
         serializedVersion: 2
         x: 32
@@ -1679,17 +1795,24 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 7, y: 8}
+        - {x: 5, y: 0}
+        - {x: 0, y: -5}
+        - {x: -8, y: -7}
+        - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: 79a954df9320ebf43a0bd7fc1dff0046
-      internalID: -1055108636
+      spriteID: ec606412b3be3464eb4979c128e804b0
+      internalID: -1917860631
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_66
+      name: checker wall_69
       rect:
         serializedVersion: 2
         x: 48
@@ -1708,14 +1831,14 @@ TextureImporter:
         - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: 467eb12d958e60a45917a656bc151741
-      internalID: 1498010375
+      spriteID: c8b0c9f9912747645bdd35981ac3458b
+      internalID: -2145199291
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_67
+      name: checker wall_70
       rect:
         serializedVersion: 2
         x: 64
@@ -1728,18 +1851,74 @@ TextureImporter:
       outline: []
       physicsShape:
       - - {x: -3, y: -8}
+        - {x: -6, y: -1}
+        - {x: -7, y: 8}
         - {x: -8, y: 8}
         - {x: -8, y: -8}
       tessellationDetail: 0
       bones: []
-      spriteID: 98df6347ffc6fec47af22c8d8fe9621f
-      internalID: 1671136537
+      spriteID: aa82ad386e9c1f945bab5aa7927c479e
+      internalID: 482988900
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_68
+      name: checker wall_71
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -6, y: 2}
+        - {x: -3, y: -3}
+        - {x: 2, y: -6}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18701a9874ba21e4a847a6487e819493
+      internalID: 1095458127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: checker wall_72
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: -2, y: -6}
+        - {x: 3, y: -3}
+        - {x: 6, y: 2}
+        - {x: 8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 988183e37b4030c46a7b50968b289705
+      internalID: 650610164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: checker wall_73
       rect:
         serializedVersion: 2
         x: 112
@@ -1751,19 +1930,84 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
-      - - {x: 3, y: -8}
+      - - {x: 7, y: 8}
+        - {x: 6, y: -1}
+        - {x: 3, y: -8}
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: 2eca6faed16ad294291aedaaad6c4497
-      internalID: 979863375
+      spriteID: 98f1fe851e94fea4b97648d8bc3317a5
+      internalID: -1758826536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_69
+      name: checker wall_74
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9afc1c306bcfb64ca9c270031f0dff6
+      internalID: 424627325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: checker wall_75
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ec0620dd5269534ab66d1566da9be26
+      internalID: -1293207585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: checker wall_76
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e01622879abcc34c8d4f8972e3c9e8c
+      internalID: -1647710791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: checker wall_77
       rect:
         serializedVersion: 2
         x: 0
@@ -1774,17 +2018,21 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -3, y: 8}
+        - {x: 2, y: 2}
+        - {x: 8, y: -3}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: 8470561a5810b0f4db8fe44688cfab3a
-      internalID: -948972692
+      spriteID: 870efc75d4bba98408f6679a265d81d9
+      internalID: -610007553
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_70
+      name: checker wall_78
       rect:
         serializedVersion: 2
         x: 16
@@ -1795,17 +2043,22 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -8, y: -3}
+        - {x: -1, y: -6}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: 40a0afce27fa9744b92b4d6e21573b5f
-      internalID: 1617986691
+      spriteID: d5a1bb47d315eef4b9e1d74f9ff25084
+      internalID: 697440666
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_71
+      name: checker wall_79
       rect:
         serializedVersion: 2
         x: 32
@@ -1816,17 +2069,22 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -8, y: -8}
+        - {x: 1, y: -6}
+        - {x: 8, y: -3}
+        - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: b7dbb884f5599284b95148309242adc8
-      internalID: 1490518294
+      spriteID: 555ec7cc72ff509429d0e2278cd49484
+      internalID: 488703796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_72
+      name: checker wall_80
       rect:
         serializedVersion: 2
         x: 48
@@ -1837,17 +2095,21 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -8, y: 8}
+        - {x: -8, y: -3}
+        - {x: -2, y: 2}
+        - {x: 3, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: bdaafe9db6424564c8b86311506c725f
-      internalID: -700115507
+      spriteID: b0cc3c6832609364fa5f290a34a90026
+      internalID: 1403828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_73
+      name: checker wall_81
       rect:
         serializedVersion: 2
         x: 64
@@ -1863,17 +2125,18 @@ TextureImporter:
         - {x: -8, y: -8}
         - {x: 8, y: -8}
         - {x: 8, y: -3}
+        - {x: 2, y: 2}
         - {x: -3, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: 7ab8e04d7553bac48ac047e7bd618650
-      internalID: -1997840417
+      spriteID: 3c697c19711d61149bc5ab730333de4b
+      internalID: -1449030459
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_74
+      name: checker wall_82
       rect:
         serializedVersion: 2
         x: 80
@@ -1888,16 +2151,18 @@ TextureImporter:
       - - {x: -8, y: -3}
         - {x: -8, y: -8}
         - {x: 8, y: -8}
+        - {x: 8, y: -7}
+        - {x: -1, y: -6}
       tessellationDetail: 0
       bones: []
-      spriteID: fc91be81ca210404e9bde0d883f64de8
-      internalID: -978526367
+      spriteID: 7d14912dc4f18d443a8e608bbe66bb1d
+      internalID: -1650280173
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_75
+      name: checker wall_83
       rect:
         serializedVersion: 2
         x: 96
@@ -1912,16 +2177,18 @@ TextureImporter:
       - - {x: -8, y: -8}
         - {x: 8, y: -8}
         - {x: 8, y: -3}
+        - {x: 1, y: -6}
+        - {x: -8, y: -7}
       tessellationDetail: 0
       bones: []
-      spriteID: 1d37617abacd1174e97d959d310ea8f1
-      internalID: 1188532787
+      spriteID: 349ba0c57da293f45a34ec1ea8374d07
+      internalID: -692012325
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: nondescript dark_76
+      name: checker wall_84
       rect:
         serializedVersion: 2
         x: 112
@@ -1934,14 +2201,78 @@ TextureImporter:
       outline: []
       physicsShape:
       - - {x: 3, y: 8}
+        - {x: -2, y: 2}
         - {x: -8, y: -3}
         - {x: -8, y: -8}
         - {x: 8, y: -8}
         - {x: 8, y: 8}
       tessellationDetail: 0
       bones: []
-      spriteID: bb4faac5e9c08144ab362d3d9c4cf100
-      internalID: -2012655198
+      spriteID: 1936f8f0afeebd94d976767dfc45d9c7
+      internalID: 1230181985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: checker wall_85
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2768ac59d30ed34ebfd10f423bd15d4
+      internalID: -18001500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: checker wall_86
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1c5b110f7d9864fa42cfead8fe52eb
+      internalID: 1952320129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: checker wall_87
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d96af70b1fabe940a028be78e7f6606
+      internalID: -1346601973
       vertices: []
       indices: 
       edges: []
@@ -1949,7 +2280,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5aab2451dc6bdb74381ebc137b9d8f73
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -1957,83 +2288,94 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      nondescript dark_0: 2468184459646274761
-      nondescript dark_1: 1756907965
-      nondescript dark_10: 2019313055
-      nondescript dark_11: -653011661
-      nondescript dark_12: -1466885074
-      nondescript dark_13: -1672319015
-      nondescript dark_14: -623264846
-      nondescript dark_15: 1739416393
-      nondescript dark_16: 2008557240
-      nondescript dark_17: 1130834446
-      nondescript dark_18: -1903105613
-      nondescript dark_19: -761717914
-      nondescript dark_2: 1106332077
-      nondescript dark_20: 1495961897
-      nondescript dark_21: -2059306266
-      nondescript dark_22: -125650928
-      nondescript dark_23: 1054204761
-      nondescript dark_24: 1139090718
-      nondescript dark_25: -2122907351
-      nondescript dark_26: -615106274
-      nondescript dark_27: 132885972
-      nondescript dark_28: 415900407
-      nondescript dark_29: -526784119
-      nondescript dark_3: 1316352186
-      nondescript dark_30: 283849103
-      nondescript dark_31: 1072338826
-      nondescript dark_32: -460540558
-      nondescript dark_33: 551013423
-      nondescript dark_34: 425162071
-      nondescript dark_35: -575349369
-      nondescript dark_36: -1127006708
-      nondescript dark_37: -773929265
-      nondescript dark_38: 1559181578
-      nondescript dark_39: 2081591998
-      nondescript dark_4: 1647601082
-      nondescript dark_40: 2014938543
-      nondescript dark_41: 683845189
-      nondescript dark_42: 63708046
-      nondescript dark_43: 413947890
-      nondescript dark_44: -349067227
-      nondescript dark_45: -2018881780
-      nondescript dark_46: -1657612236
-      nondescript dark_47: 704501969
-      nondescript dark_48: -693972851
-      nondescript dark_49: 1920933949
-      nondescript dark_5: -946918195
-      nondescript dark_50: -1938401203
-      nondescript dark_51: 826715807
-      nondescript dark_52: -981546253
-      nondescript dark_53: 907455778
-      nondescript dark_54: -1336047766
-      nondescript dark_55: -1472970733
-      nondescript dark_56: 536304239
-      nondescript dark_57: 1036559667
-      nondescript dark_58: 978940366
-      nondescript dark_59: 1733522713
-      nondescript dark_6: 33944214
-      nondescript dark_60: -186128401
-      nondescript dark_61: -925565478
-      nondescript dark_62: 1819664761
-      nondescript dark_63: 788967788
-      nondescript dark_64: -446262334
-      nondescript dark_65: -1055108636
-      nondescript dark_66: 1498010375
-      nondescript dark_67: 1671136537
-      nondescript dark_68: 979863375
-      nondescript dark_69: -948972692
-      nondescript dark_7: -293476864
-      nondescript dark_70: 1617986691
-      nondescript dark_71: 1490518294
-      nondescript dark_72: -700115507
-      nondescript dark_73: -1997840417
-      nondescript dark_74: -978526367
-      nondescript dark_75: 1188532787
-      nondescript dark_76: -2012655198
-      nondescript dark_8: 1066785523
-      nondescript dark_9: -1173698225
+      checker wall_0: 648662292
+      checker wall_1: 1482120240
+      checker wall_10: 1838059478
+      checker wall_11: 1001236236
+      checker wall_12: -2094038758
+      checker wall_13: 1012527087
+      checker wall_14: -624933200
+      checker wall_15: -914580053
+      checker wall_16: -1534163566
+      checker wall_17: 18331797
+      checker wall_18: -750972212
+      checker wall_19: -1586845267
+      checker wall_2: -1976205443
+      checker wall_20: -2023089968
+      checker wall_21: -1753444050
+      checker wall_22: 1146997135
+      checker wall_23: 1482325195
+      checker wall_24: -586896467
+      checker wall_25: 1801921884
+      checker wall_26: -61535033
+      checker wall_27: -198802995
+      checker wall_28: -479432860
+      checker wall_29: -1424535251
+      checker wall_3: 47559626
+      checker wall_30: -925629506
+      checker wall_31: -1416469048
+      checker wall_32: 21823257
+      checker wall_33: 417905377
+      checker wall_34: 1959560504
+      checker wall_35: 708130764
+      checker wall_36: 541105849
+      checker wall_37: 1506669565
+      checker wall_38: 849347975
+      checker wall_39: -279606889
+      checker wall_4: 554774418
+      checker wall_40: -888329098
+      checker wall_41: -475106884
+      checker wall_42: 50196887
+      checker wall_43: -1276641940
+      checker wall_44: 1051353467
+      checker wall_45: 1399871326
+      checker wall_46: -1417996920
+      checker wall_47: 8861788
+      checker wall_48: -624732143
+      checker wall_49: 1713367415
+      checker wall_5: 1571051220
+      checker wall_50: 149882291
+      checker wall_51: 824054671
+      checker wall_52: 2097868425
+      checker wall_53: 1671606459
+      checker wall_54: 1515488356
+      checker wall_55: 782694576
+      checker wall_56: -1629313410
+      checker wall_57: -51151375
+      checker wall_58: 2082599287
+      checker wall_59: -1093660323
+      checker wall_6: -707718723
+      checker wall_60: 1191617076
+      checker wall_61: -620601766
+      checker wall_62: 484440429
+      checker wall_63: -7966155
+      checker wall_64: 1336193843
+      checker wall_65: -687182929
+      checker wall_66: 1749758173
+      checker wall_67: 2082712016
+      checker wall_68: -1917860631
+      checker wall_69: -2145199291
+      checker wall_7: 630014354
+      checker wall_70: 482988900
+      checker wall_71: 1095458127
+      checker wall_72: 650610164
+      checker wall_73: -1758826536
+      checker wall_74: 424627325
+      checker wall_75: -1293207585
+      checker wall_76: -1647710791
+      checker wall_77: -610007553
+      checker wall_78: 697440666
+      checker wall_79: 488703796
+      checker wall_8: -1240908563
+      checker wall_80: 1403828
+      checker wall_81: -1449030459
+      checker wall_82: -1650280173
+      checker wall_83: -692012325
+      checker wall_84: 1230181985
+      checker wall_85: -18001500
+      checker wall_86: 1952320129
+      checker wall_87: -1346601973
+      checker wall_9: 413476986
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
