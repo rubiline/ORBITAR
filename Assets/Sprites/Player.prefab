@@ -10073,6 +10073,7 @@ GameObject:
   - component: {fileID: 1784346265515224257}
   - component: {fileID: 1157664140262857372}
   - component: {fileID: 7744258807544965520}
+  - component: {fileID: 4268250741073854098}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -10120,6 +10121,7 @@ MonoBehaviour:
   moon: {fileID: 8177915327600657702}
   sunSprite: {fileID: 2596737557635888124}
   moonSprite: {fileID: 8796508410356845498}
+  movementVector: {x: 0, y: 0, z: 0}
 --- !u!114 &1157664140262857372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10163,3 +10165,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &4268250741073854098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6896484763786481029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 350cc5db2348167439682fcdb40eafcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 7744258807544965520}
+  player: {fileID: 1784346265515224257}
