@@ -9,6 +9,7 @@ TagManager:
   - Floor
   - SolarFloor
   - LunarFloor
+  - MovingPlatform
   layers:
   - Default
   - TransparentFX

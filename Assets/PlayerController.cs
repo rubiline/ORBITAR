@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net.Sockets;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -19,10 +20,10 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private Transform sun;
     public bool SunGrounded;
-    private bool sunLocked;
+    public bool SunLocked;
     [SerializeField] private Transform moon;
     public bool MoonGrounded;
-    private bool moonLocked;
+    public bool MoonLocked;
 
     [SerializeField] private SpriteSwitch sunSprite;
     [SerializeField] private SpriteSwitch moonSprite;
@@ -30,7 +31,9 @@ public class PlayerController : MonoBehaviour
     private Transform target;
     private Transform focus;
 
-    public Vector3 movementVector;
+    public Vector3 MovementVector;
+    public Mover CurrentInfluence;
+
     private float currentAngularVelocity;
     private int spin;
     private bool offsetting;
@@ -102,7 +105,7 @@ public class PlayerController : MonoBehaviour
         Transform target = a ? sun : moon;
         Transform focus = a ? moon : sun;
 
-        if ((a && !SunGrounded) || (!a && !MoonGrounded))
+        if ((a && !MoonGrounded) || (!a && !SunGrounded))
         {
             return;
         }
@@ -121,13 +124,13 @@ public class PlayerController : MonoBehaviour
 
         if (a)
         {
-            moonLocked = true;
-            if (!locked) sunLocked = false;
+            MoonLocked = true;
+            if (!locked) SunLocked = false;
         }
         else
         {
-            sunLocked = true;
-            if (!locked) moonLocked = false;
+            SunLocked = true;
+            if (!locked) MoonLocked = false;
         }
     }
 
@@ -148,7 +151,7 @@ public class PlayerController : MonoBehaviour
         if (focus == sun) sunSprite.Lock();
         if (focus == moon) moonSprite.Lock();
 
-        movementVector = Vector3.zero;
+        MovementVector = Vector3.zero;
 
         Vector3 presentPosition = transform.position;
         Vector3 focusOffset = focus.position - presentPosition;
@@ -165,21 +168,24 @@ public class PlayerController : MonoBehaviour
     {
         if (focus == sun)
         {
-            if (!sunLocked) return;
+            if (!SunLocked) return;
             sunSprite.Unlock();
-            sunLocked = false;
+            SunLocked = false;
         }
         if (focus == moon)
         {
-            if (!moonLocked) return;
+            if (!MoonLocked) return;
             moonSprite.Unlock();
-            moonLocked = false;
+            MoonLocked = false;
         }
 
         Vector3 offset = (target.position - focus.position) / 2;
 
         RecalculateSpeed();
-        movementVector = (Quantize(Vector3.Cross((target.position - focus.position), Vector3.forward).normalized, 16) * -spin);
+
+        Vector3 direction = Vector3.Cross((target.position - focus.position), Vector3.forward).normalized;
+
+        MovementVector = (Quantize(direction, 16) * -spin);
 
         transform.position += offset;
         target.position -= offset;
@@ -198,11 +204,15 @@ public class PlayerController : MonoBehaviour
         {
             sunSprite.Lock();
             moonSprite.Unlock();
+            MoonLocked = false;
+            SunLocked = true;
         }
         if (focus == moon)
         {
             moonSprite.Lock();
             sunSprite.Unlock();
+            SunLocked = false;
+            MoonLocked = true;
         }
     }
 
@@ -218,7 +228,8 @@ public class PlayerController : MonoBehaviour
         currentAngularVelocity = angularSpeed * Time.deltaTime;
         //rb.SetRotation(rb.rotation + currentAngularVelocity * spin);
         //rb.MovePosition(rb.position + (Vector2)movementVector * Time.deltaTime);
-        this.transform.position = this.transform.position + (movementVector * Time.deltaTime) * linearSpeed;
+
+        this.transform.position = this.transform.position + (((MovementVector + (CurrentInfluence != null ? CurrentInfluence.Vector : Vector3.zero)) * Time.deltaTime) * linearSpeed);
         this.transform.eulerAngles = this.transform.eulerAngles + new Vector3(0, 0, currentAngularVelocity * spin);
     }
 
@@ -238,5 +249,15 @@ public class PlayerController : MonoBehaviour
         }
 
         return comparator * vector.magnitude;
+    }
+
+    private Vector3 SumInfluences(List<Mover> m)
+    {
+        Vector3 res = Vector3.zero;
+        for (int i = 0; i < m.Count; i++) 
+        {
+            res += m[i].Vector;
+        }
+        return res;
     }
 }
