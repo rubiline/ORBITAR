@@ -4999,7 +4999,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4752415353629048878
 Transform:
   m_ObjectHideFlags: 0
@@ -10113,9 +10113,9 @@ MonoBehaviour:
   rb: {fileID: 7744258807544965520}
   angularSpeed: 120
   linearSpeed: 0
-  offsetSpeed: 5
+  offsetSpeed: 2
   minimumOffset: 0.5
-  maximumOffset: 3
+  maximumOffset: 1.75
   sun: {fileID: 1105678764957230184}
   moon: {fileID: 8177915327600657702}
   sunSprite: {fileID: 2596737557635888124}
