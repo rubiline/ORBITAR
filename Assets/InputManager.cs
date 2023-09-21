@@ -41,7 +41,7 @@ public class InputManager : MonoBehaviour
 
     private void DoA(CallbackContext ctx)
     {
-        if (BHeld) return;
+        //if (BHeld) return;
         if (ctx.performed)
         {
             AHeld = true;
@@ -56,7 +56,7 @@ public class InputManager : MonoBehaviour
 
     private void DoB(CallbackContext ctx)
     {
-        if (AHeld) return;
+        //if (AHeld) return;
         if (ctx.performed)
         {
             BHeld = true;

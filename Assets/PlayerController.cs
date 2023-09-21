@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.Sockets;
+using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class PlayerController : MonoBehaviour
 {
@@ -23,11 +26,14 @@ public class PlayerController : MonoBehaviour
     private Transform target;
     private Transform focus;
 
-    private Vector3 movementVector;
+private Vector3 movementVector;
     private float currentAngularVelocity;
     private int spin;
     private bool offsetting;
     private float offsetDirection;
+    private bool locked;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -69,8 +75,10 @@ public class PlayerController : MonoBehaviour
         if (Mathf.Abs(sunx) > 0.05f && sunx > -minimumOffset) sunx = -minimumOffset;
         if (Mathf.Abs(moonx) > 0.05f && moonx < minimumOffset) moonx = minimumOffset;
 
-        if (sunx < -maximumOffset) sunx = -maximumOffset;
-        if (moonx > maximumOffset) moonx = maximumOffset;
+        float max = maximumOffset * (locked ? 2f : 1f);
+
+        if (sunx < -max) sunx = -max;
+        if (moonx > max) moonx = max;
 
         sun.localPosition = new Vector3(sunx, sun.localPosition.y, sun.localPosition.z);
         moon.localPosition = new Vector3(moonx, moon.localPosition.y, moon.localPosition.z);
@@ -82,15 +90,42 @@ public class PlayerController : MonoBehaviour
     /// <param name="a">True for moon focus, false for sun focus</param>
     public void Lock(bool a)
     {
-        target = a ? sun : moon;
-        focus = a ? moon : sun;
+        Transform target = a ? sun : moon;
+        Transform focus = a ? moon : sun;
 
+        if (!locked)
+        {
+            locked = true;
+            Lock(target, focus);
+        } else
+        {
+            Swap(target, focus);
+        }
+
+        this.target = target;
+        this.focus = focus;
+    }
+
+    public void Release(bool a)
+    {
+        Transform target = a ? sun : moon;
+        Transform focus = a ? moon : sun;
+
+        if (target == this.target)
+        {
+            Release(target, focus);
+            locked = false;
+        }
+    }
+
+    public void Lock(Transform target, Transform focus)
+    {
         if (focus == sun) sunSprite.Lock();
         if (focus == moon) moonSprite.Lock();
 
         movementVector = Vector3.zero;
 
-        Vector3 presentPosition = rb.position;
+        Vector3 presentPosition = transform.position;
         Vector3 focusOffset = focus.position - presentPosition;
         Vector3 targetOffset = target.position - presentPosition;
 
@@ -99,11 +134,10 @@ public class PlayerController : MonoBehaviour
         focus.position -= focusOffset;
     }
 
-    public void Release(bool a)
-    {
-        target = a ? sun : moon;
-        focus = a ? moon : sun;
 
+
+    public void Release(Transform target, Transform focus)
+    {
         if (focus == sun) sunSprite.Unlock();
         if (focus == moon) moonSprite.Unlock();
 
@@ -115,7 +149,15 @@ public class PlayerController : MonoBehaviour
         transform.position += offset;
         target.position -= offset;
         focus.position -= offset;
+    }
 
+    public void Swap(Transform target, Transform focus)
+    {
+        Vector3 offset = focus.position - transform.position;
+
+        transform.position = focus.position;
+        focus.position -= offset;
+        target.position -= offset;
     }
 
     private void RecalculateSpeed()

@@ -5422,12 +5422,8 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1784346265515224257, guid: 11fb71ee53e127045a5dd410b4c05d5a, type: 3}
-      propertyPath: offsetSpeed
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1784346265515224257, guid: 11fb71ee53e127045a5dd410b4c05d5a, type: 3}
       propertyPath: maximumOffset
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4925409520561349379, guid: 11fb71ee53e127045a5dd410b4c05d5a, type: 3}
       propertyPath: m_LocalPosition.x
