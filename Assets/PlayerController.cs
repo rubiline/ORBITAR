@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     private Transform target;
     private Transform focus;
 
-private Vector3 movementVector;
+    public Vector3 movementVector;
     private float currentAngularVelocity;
     private int spin;
     private bool offsetting;
@@ -54,6 +54,11 @@ private Vector3 movementVector;
         {
             spin = -1;
         }
+    }
+
+    public void ReverseRotation()
+    {
+        SetRotation(spin != 1);
     }
 
     public void StopRotation()
