@@ -18,7 +18,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float maximumOffset;
 
     [SerializeField] private Transform sun;
+    public bool SunGrounded;
+    private bool sunLocked;
     [SerializeField] private Transform moon;
+    public bool MoonGrounded;
+    private bool moonLocked;
 
     [SerializeField] private SpriteSwitch sunSprite;
     [SerializeField] private SpriteSwitch moonSprite;
@@ -98,6 +102,14 @@ public class PlayerController : MonoBehaviour
         Transform target = a ? sun : moon;
         Transform focus = a ? moon : sun;
 
+        if ((a && !SunGrounded) || (!a && !MoonGrounded))
+        {
+            return;
+        }
+
+        this.target = target;
+        this.focus = focus;
+
         if (!locked)
         {
             locked = true;
@@ -107,8 +119,16 @@ public class PlayerController : MonoBehaviour
             Swap(target, focus);
         }
 
-        this.target = target;
-        this.focus = focus;
+        if (a)
+        {
+            moonLocked = true;
+            if (!locked) sunLocked = false;
+        }
+        else
+        {
+            sunLocked = true;
+            if (!locked) moonLocked = false;
+        }
     }
 
     public void Release(bool a)
@@ -143,8 +163,18 @@ public class PlayerController : MonoBehaviour
 
     public void Release(Transform target, Transform focus)
     {
-        if (focus == sun) sunSprite.Unlock();
-        if (focus == moon) moonSprite.Unlock();
+        if (focus == sun)
+        {
+            if (!sunLocked) return;
+            sunSprite.Unlock();
+            sunLocked = false;
+        }
+        if (focus == moon)
+        {
+            if (!moonLocked) return;
+            moonSprite.Unlock();
+            moonLocked = false;
+        }
 
         Vector3 offset = (target.position - focus.position) / 2;
 
@@ -163,6 +193,17 @@ public class PlayerController : MonoBehaviour
         transform.position = focus.position;
         focus.position -= offset;
         target.position -= offset;
+
+        if (focus == sun)
+        {
+            sunSprite.Lock();
+            moonSprite.Unlock();
+        }
+        if (focus == moon)
+        {
+            moonSprite.Lock();
+            sunSprite.Unlock();
+        }
     }
 
     private void RecalculateSpeed()
