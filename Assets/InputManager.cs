@@ -8,13 +8,17 @@ using static UnityEngine.InputSystem.InputAction;
 
 public class InputManager : MonoBehaviour
 {
+    [SerializeField] private PlayerController controller;
+
     [SerializeField] private InputActionReference A;
     [SerializeField] private InputActionReference B;
+    [SerializeField] private InputActionReference Move;
 
-    [SerializeField] private UnityEvent OnAGameplay;
-    [SerializeField] private UnityEvent OnBGameplay;
-    [SerializeField] private UnityEvent OnAReleaseGameplay;
-    [SerializeField] private UnityEvent OnBReleaseGameplay;
+    [SerializeField] private Action OnAGameplay;
+    [SerializeField] private Action OnBGameplay;
+    [SerializeField] private Action OnAReleaseGameplay;
+    [SerializeField] private Action OnBReleaseGameplay;
+    [SerializeField] private Action<float, bool> MoveGameplay;
 
     private bool AHeld;
     private bool BHeld;
@@ -25,10 +29,14 @@ public class InputManager : MonoBehaviour
         B.action.Enable();
 
         A.action.performed += DoA;
-        B.action.performed += DoB;        
+        B.action.performed += DoB;
         A.action.canceled += DoA;
         B.action.canceled += DoB;
 
+        Move.action.Enable();
+
+        Move.action.performed += DoMove;
+        Move.action.canceled += DoMove;
     }
 
     private void DoA(CallbackContext ctx)
@@ -37,12 +45,12 @@ public class InputManager : MonoBehaviour
         if (ctx.performed)
         {
             AHeld = true;
-            OnAGameplay?.Invoke();
+            controller.Lock(true);
         }
         if (AHeld && ctx.canceled)
         {
             AHeld = false;
-            OnAReleaseGameplay?.Invoke();
+            controller.Release(true);
         }
     }
 
@@ -52,12 +60,17 @@ public class InputManager : MonoBehaviour
         if (ctx.performed)
         {
             BHeld = true;
-            OnBGameplay?.Invoke();
+            controller.Lock(false);
         }
         if (BHeld && ctx.canceled)
         {
             BHeld = false;
-            OnBReleaseGameplay?.Invoke();
+            controller.Release(false);
         }
+    }
+
+    private void DoMove(CallbackContext ctx)
+    {
+        controller.TriggerOffset(ctx.ReadValue<float>(), ctx.performed);
     }
 }

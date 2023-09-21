@@ -9,6 +9,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float angularSpeed;
     [SerializeField] private float linearSpeed;
 
+
+    [SerializeField] private float offsetSpeed;
+    [SerializeField] private float minimumOffset;
+    [SerializeField] private float maximumOffset;
+
+
     [SerializeField] private Transform sun;
     [SerializeField] private Transform moon;
 
@@ -18,6 +24,8 @@ public class PlayerController : MonoBehaviour
     private Vector3 movementVector;
     private float currentAngularVelocity;
     private int spin;
+    private bool offsetting;
+    private float offsetDirection;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +51,28 @@ public class PlayerController : MonoBehaviour
     public void StopRotation()
     {
         spin = 0;
+    }
+
+    public void TriggerOffset(float dir, bool trig)
+    {
+        offsetting = trig;
+        offsetDirection = dir;
+    }
+
+    public void AlterOffset(float dir, float delta)
+    {
+        float sunx = sun.localPosition.x * (1f + (dir * offsetSpeed * delta));
+        float moonx = moon.localPosition.x * (1f + (dir * offsetSpeed * delta));
+
+        if (Mathf.Abs(sunx) > 0.05f && sunx > -minimumOffset) sunx = -minimumOffset;
+        if (Mathf.Abs(moonx) > 0.05f && moonx < minimumOffset) moonx = minimumOffset;
+
+        if (sunx < -maximumOffset) sunx = -maximumOffset;
+        if (moonx > maximumOffset) moonx = maximumOffset;
+
+        sun.localPosition = new Vector3(sunx, sun.localPosition.y, sun.localPosition.z);
+        moon.localPosition = new Vector3(moonx, moon.localPosition.y, moon.localPosition.z);
+        RecalculateSpeed();
     }
 
     /// <summary>
@@ -72,7 +102,8 @@ public class PlayerController : MonoBehaviour
 
         Vector3 offset = (target.position - focus.position) / 2;
 
-        movementVector = (Quantize(Vector3.Cross((target.position - focus.position), Vector3.forward).normalized, 16) * -spin) * (Mathf.Deg2Rad * angularSpeed * (target.position - focus.position).magnitude);
+        RecalculateSpeed();
+        movementVector = (Quantize(Vector3.Cross((target.position - focus.position), Vector3.forward).normalized, 16) * -spin);
 
         transform.position += offset;
         target.position -= offset;
@@ -80,13 +111,19 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    private void RecalculateSpeed()
+    {
+        linearSpeed = (Mathf.Deg2Rad * angularSpeed * (sun.position - moon.position).magnitude);
+    }
+
     // Update is called once per frame
     void Update()
     {
+        if (offsetting) AlterOffset(offsetDirection, Time.deltaTime);
         currentAngularVelocity = angularSpeed * Time.deltaTime;
         //rb.SetRotation(rb.rotation + currentAngularVelocity * spin);
         //rb.MovePosition(rb.position + (Vector2)movementVector * Time.deltaTime);
-        this.transform.position = this.transform.position + (movementVector * Time.deltaTime);
+        this.transform.position = this.transform.position + (movementVector * Time.deltaTime) * linearSpeed;
         this.transform.eulerAngles = this.transform.eulerAngles + new Vector3(0, 0, currentAngularVelocity * spin);
     }
 
