@@ -4844,6 +4844,7 @@ GameObject:
   - component: {fileID: 644715011345722862}
   - component: {fileID: 6359292765949203567}
   - component: {fileID: 8796508410356845498}
+  - component: {fileID: 5471389361510837841}
   m_Layer: 0
   m_Name: Moon
   m_TagString: Untagged
@@ -4982,6 +4983,18 @@ MonoBehaviour:
   spriteRenderer: {fileID: 3381305472673236016}
   idle: {fileID: 300774369, guid: 2397aeab091ee92498e52a054e972553, type: 3}
   locked: {fileID: 300774369, guid: bc6e12058c469cd4b9867afa4db1e4c6, type: 3}
+--- !u!114 &5471389361510837841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2213831442652220954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba82b987f9839be44b25e5a83288f8f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2795255654483023396
 GameObject:
   m_ObjectHideFlags: 0
@@ -9923,6 +9936,7 @@ GameObject:
   - component: {fileID: 2193643287806345712}
   - component: {fileID: 7345821614597666083}
   - component: {fileID: 2596737557635888124}
+  - component: {fileID: 7200450514676195457}
   m_Layer: 0
   m_Name: Sun
   m_TagString: Untagged
@@ -10061,6 +10075,18 @@ MonoBehaviour:
   spriteRenderer: {fileID: 2193643287806345712}
   idle: {fileID: -283451841, guid: 2397aeab091ee92498e52a054e972553, type: 3}
   locked: {fileID: -283451841, guid: bc6e12058c469cd4b9867afa4db1e4c6, type: 3}
+--- !u!114 &7200450514676195457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6783901059536499952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba82b987f9839be44b25e5a83288f8f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6896484763786481029
 GameObject:
   m_ObjectHideFlags: 0
