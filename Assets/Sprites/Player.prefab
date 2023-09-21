@@ -10115,7 +10115,7 @@ MonoBehaviour:
   linearSpeed: 0
   offsetSpeed: 5
   minimumOffset: 0.5
-  maximumOffset: 3
+  maximumOffset: 1.5
   sun: {fileID: 1105678764957230184}
   moon: {fileID: 8177915327600657702}
   sunSprite: {fileID: 2596737557635888124}
