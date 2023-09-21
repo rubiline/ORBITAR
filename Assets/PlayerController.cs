@@ -14,9 +14,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float minimumOffset;
     [SerializeField] private float maximumOffset;
 
-
     [SerializeField] private Transform sun;
     [SerializeField] private Transform moon;
+
+    [SerializeField] private SpriteSwitch sunSprite;
+    [SerializeField] private SpriteSwitch moonSprite;
 
     private Transform target;
     private Transform focus;
@@ -72,7 +74,6 @@ public class PlayerController : MonoBehaviour
 
         sun.localPosition = new Vector3(sunx, sun.localPosition.y, sun.localPosition.z);
         moon.localPosition = new Vector3(moonx, moon.localPosition.y, moon.localPosition.z);
-        RecalculateSpeed();
     }
 
     /// <summary>
@@ -83,6 +84,9 @@ public class PlayerController : MonoBehaviour
     {
         target = a ? sun : moon;
         focus = a ? moon : sun;
+
+        if (focus == sun) sunSprite.Lock();
+        if (focus == moon) moonSprite.Lock();
 
         movementVector = Vector3.zero;
 
@@ -99,6 +103,9 @@ public class PlayerController : MonoBehaviour
     {
         target = a ? sun : moon;
         focus = a ? moon : sun;
+
+        if (focus == sun) sunSprite.Unlock();
+        if (focus == moon) moonSprite.Unlock();
 
         Vector3 offset = (target.position - focus.position) / 2;
 
