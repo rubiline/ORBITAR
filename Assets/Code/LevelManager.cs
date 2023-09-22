@@ -17,7 +17,7 @@ public class LevelManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //StartTimer();
+        AudioManager.Instance.PlayMusic("DISTANT_NEBULA");
     }
 
     // Update is called once per frame
