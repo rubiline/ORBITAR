@@ -84,8 +84,10 @@ public class PlayerController : MonoBehaviour
         float sunx = sun.localPosition.x * (1f + (dir * offsetSpeed * delta));
         float moonx = moon.localPosition.x * (1f + (dir * offsetSpeed * delta));
 
-        if (Mathf.Abs(sunx) > 0.05f && sunx > -minimumOffset) sunx = -minimumOffset;
-        if (Mathf.Abs(moonx) > 0.05f && moonx < minimumOffset) moonx = minimumOffset;
+        float min = minimumOffset * (locked ? 2f : 1f);
+
+        if (Mathf.Abs(sunx) > 0.05f && sunx > -min) sunx = -min;
+        if (Mathf.Abs(moonx) > 0.05f && moonx < min) moonx = min;
 
         float max = maximumOffset * (locked ? 2f : 1f);
 

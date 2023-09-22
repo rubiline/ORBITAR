@@ -11090,18 +11090,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7727650154633646717, guid: 4d0ccc3384285cf45829abfca610c5cd, type: 3}
-      propertyPath: music.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7727650154633646717, guid: 4d0ccc3384285cf45829abfca610c5cd, type: 3}
-      propertyPath: music.Array.data[0].name
-      value: DISTANT_NEBULA
-      objectReference: {fileID: 0}
-    - target: {fileID: 7727650154633646717, guid: 4d0ccc3384285cf45829abfca610c5cd, type: 3}
-      propertyPath: music.Array.data[1].hasIntro
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

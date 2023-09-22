@@ -53,6 +53,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 500ab280914b261458bfa2caf9d27f23, type: 3}
     channel: 1
     looping: 0
-  music: []
+  music:
+  - name: DISTANT_NEBULA
+    hasIntro: 0
   musicPath: Music
   effectsPath: FX
