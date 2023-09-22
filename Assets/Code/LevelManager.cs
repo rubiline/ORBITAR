@@ -11,13 +11,14 @@ public class LevelManager : MonoBehaviour
     public TimeSpan silverTime;
     public TimeSpan bronzeTime;
     public int totalGems;
+    public int collectedGems;
     public TimeSpan currentTime;
     public Stopwatch timer;
 
     // Start is called before the first frame update
     void Start()
     {
-        AudioManager.Instance.PlayMusic("DISTANT_NEBULA");
+        // AudioManager.Instance.PlayMusic("DISTANT_NEBULA");
     }
 
     // Update is called once per frame

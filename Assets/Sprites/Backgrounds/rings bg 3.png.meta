@@ -1,28 +1,19 @@
 fileFormatVersion: 2
-guid: 30f2c2f00d781564d80cd91d3cedf165
+guid: 27639bf601e6f364186a174de8ecd612
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2429919002490121231
-    second: arrows_0
+      213: 7230708894332155408
+    second: rings bg 3_0
   - first:
-      213: 67926103340967526
-    second: arrows_1
+      213: 4275641908055862081
+    second: rings bg 3_1
   - first:
-      213: -2938970880757876879
-    second: arrows_2
+      213: 377337177663077657
+    second: rings bg 3_2
   - first:
-      213: 5635105361348811957
-    second: arrows_3
-  - first:
-      213: -6198066232139300319
-    second: arrows_4
-  - first:
-      213: -4500868321734961790
-    second: arrows_5
-  - first:
-      213: -7905275962017797664
-    second: arrows_6
+      213: -4765286209665489830
+    second: rings bg 3_3
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -64,14 +55,14 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -101,31 +92,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Server
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -140,169 +119,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: arrows_0
+      name: rings bg 3_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
-        width: 16
-        height: 16
+        y: 168
+        width: 68
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: eef1b836204dee1439d33ed3159ce478
-      internalID: -2141774470
+      spriteID: 016fce0fd63a85460800000000000000
+      internalID: 7230708894332155408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arrows_1
+      name: rings bg 3_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
+        x: 41
+        y: 89
+        width: 215
+        height: 167
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 06f647022856dd847b12b31151913bca
-      internalID: 2074758780
+      spriteID: 14b617c79a1265b30800000000000000
+      internalID: 4275641908055862081
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arrows_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eb7f5ba5db6c8654281c5a378224fe15
-      internalID: 2051457809
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arrows_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bcb2ab22aaf73d741bd19f97f95dfdbd
-      internalID: 93144655
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arrows_4
+      name: rings bg 3_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 118
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 137abb94e2e0bff438d899819121ef08
-      internalID: -993328323
+      spriteID: 91df723f9229c3500800000000000000
+      internalID: 377337177663077657
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arrows_5
+      name: rings bg 3_3
       rect:
         serializedVersion: 2
-        x: 16
+        x: 145
         y: 0
-        width: 16
-        height: 16
+        width: 111
+        height: 58
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 666f05456fb3c1140986b89e8be52210
-      internalID: -720105232
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arrows_6
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 413d111ed82e67442a36f0788f205672
-      internalID: 100839059
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: arrows_7
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87759f4785eb61841bd61448eae76ca8
-      internalID: 734340627
+      spriteID: a5422db907d4eddb0800000000000000
+      internalID: -4765286209665489830
       vertices: []
       indices: 
       edges: []
@@ -318,14 +213,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      arrows_0: -2141774470
-      arrows_1: 2074758780
-      arrows_2: 2051457809
-      arrows_3: 93144655
-      arrows_4: -993328323
-      arrows_5: -720105232
-      arrows_6: 100839059
-      arrows_7: 734340627
+      rings bg 3_0: 7230708894332155408
+      rings bg 3_1: 4275641908055862081
+      rings bg 3_2: 377337177663077657
+      rings bg 3_3: -4765286209665489830
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
