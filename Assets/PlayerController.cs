@@ -157,6 +157,8 @@ public class PlayerController : MonoBehaviour
         Vector3 focusOffset = focus.position - presentPosition;
         Vector3 targetOffset = target.position - presentPosition;
 
+        AudioManager.Instance.PlaySFX("Lock");
+
         transform.position = focus.position;
         target.position += targetOffset;
         focus.position -= focusOffset;
@@ -184,6 +186,8 @@ public class PlayerController : MonoBehaviour
         RecalculateSpeed();
 
         Vector3 direction = Vector3.Cross((target.position - focus.position), Vector3.forward).normalized;
+
+        AudioManager.Instance.PlaySFX("Release");
 
         MovementVector = (Quantize(direction, 16) * -spin);
 
