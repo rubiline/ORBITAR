@@ -11151,6 +11151,14 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 198616083}
+    - target: {fileID: 7014774464317389978, guid: f444655c2a59c614588d7b69512bba94, type: 3}
+      propertyPath: lookAhead
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7014774464317389978, guid: f444655c2a59c614588d7b69512bba94, type: 3}
+      propertyPath: spinDistance
+      value: 0.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
