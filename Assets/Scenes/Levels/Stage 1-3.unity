@@ -8009,6 +8009,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1784346265515224257, guid: 11fb71ee53e127045a5dd410b4c05d5a, type: 3}
+      propertyPath: maxVelocity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1784346265515224257, guid: 11fb71ee53e127045a5dd410b4c05d5a, type: 3}
+      propertyPath: gravityDir.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1784346265515224257, guid: 11fb71ee53e127045a5dd410b4c05d5a, type: 3}
+      propertyPath: gravityPower
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2213831442652220954, guid: 11fb71ee53e127045a5dd410b4c05d5a, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 4925409520561349379, guid: 11fb71ee53e127045a5dd410b4c05d5a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -8049,8 +8065,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6783901059536499952, guid: 11fb71ee53e127045a5dd410b4c05d5a, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 6896484763786481029, guid: 11fb71ee53e127045a5dd410b4c05d5a, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6896484763786481029, guid: 11fb71ee53e127045a5dd410b4c05d5a, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []

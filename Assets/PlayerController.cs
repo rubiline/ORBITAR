@@ -18,6 +18,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float minimumOffset;
     [SerializeField] private float maximumOffset;
 
+    [SerializeField] private Vector3 gravityDir;
+    [SerializeField] private float gravityPower;
+    [SerializeField] private float maxVelocity;
+
     [SerializeField] private Transform sun;
     public bool SunGrounded;
     public bool SunLocked;
@@ -39,6 +43,18 @@ public class PlayerController : MonoBehaviour
     private bool offsetting;
     private float offsetDirection;
     private bool locked;
+
+    public void ResetGravity()
+    {
+        gravityDir = Vector3.zero;
+        gravityPower = 0;
+    }
+
+    public void SetGravity(Vector3 dir, float power)
+    {
+        gravityDir = dir;
+        gravityPower = power;
+    }
 
 
     // Start is called before the first frame update
@@ -206,6 +222,8 @@ public class PlayerController : MonoBehaviour
         focus.position -= offset;
         target.position -= offset;
 
+        AudioManager.Instance.PlaySFX("Lock");
+
         if (focus == sun)
         {
             sunSprite.Lock();
@@ -234,6 +252,14 @@ public class PlayerController : MonoBehaviour
         currentAngularVelocity = angularSpeed * Time.deltaTime;
         //rb.SetRotation(rb.rotation + currentAngularVelocity * spin);
         //rb.MovePosition(rb.position + (Vector2)movementVector * Time.deltaTime);
+
+        Vector3 vel = (((MovementVector + (CurrentInfluence != null ? CurrentInfluence.Vector : Vector3.zero)) * Time.deltaTime) * linearSpeed);
+        if (!locked)
+        {
+            vel += gravityDir * (gravityPower * Time.deltaTime);
+        }
+        linearSpeed = vel.magnitude / Time.deltaTime;
+        MovementVector = vel.normalized;
 
         this.transform.position = this.transform.position + (((MovementVector + (CurrentInfluence != null ? CurrentInfluence.Vector : Vector3.zero)) * Time.deltaTime) * linearSpeed);
         this.transform.eulerAngles = this.transform.eulerAngles + new Vector3(0, 0, currentAngularVelocity * spin);
