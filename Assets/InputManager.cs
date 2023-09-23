@@ -13,6 +13,7 @@ public class InputManager : MonoBehaviour
     [SerializeField] private InputActionReference A;
     [SerializeField] private InputActionReference B;
     [SerializeField] private InputActionReference Move;
+    [SerializeField] private InputActionReference Select;
 
     [SerializeField] private Action OnAGameplay;
     [SerializeField] private Action OnBGameplay;
@@ -33,6 +34,12 @@ public class InputManager : MonoBehaviour
         B.action.canceled += DoB;
         Move.action.performed += DoMove;
         Move.action.canceled += DoMove;
+        Select.action.performed += DoDie;
+    }
+
+    private void DoDie(CallbackContext ctx)
+    {
+        controller.Die();
     }
 
     private void DoA(CallbackContext ctx)
@@ -80,6 +87,7 @@ public class InputManager : MonoBehaviour
         B.action.canceled -= DoB;
         Move.action.performed -= DoMove;
         Move.action.canceled -= DoMove;
+        Select.action.performed -= DoDie;
     }
 
     private void EnableGameplayControls(bool controls)
@@ -89,11 +97,13 @@ public class InputManager : MonoBehaviour
             A.action.Enable();
             B.action.Enable();
             Move.action.Enable();
+            Select.action.Enable();
         } else
         {
             A.action.Disable();
             B.action.Disable();
             Move.action.Disable();
+            Select.action.Disable();
         }
     }
 }
