@@ -10208,6 +10208,7 @@ MonoBehaviour:
   A: {fileID: 2599989474803213697, guid: 0dbe3ec4ec1664442950e68c8ae61e8a, type: 3}
   B: {fileID: 2489438731138844060, guid: 0dbe3ec4ec1664442950e68c8ae61e8a, type: 3}
   Move: {fileID: 2345810544433855861, guid: 0dbe3ec4ec1664442950e68c8ae61e8a, type: 3}
+  Select: {fileID: -8397948794221300576, guid: 0dbe3ec4ec1664442950e68c8ae61e8a, type: 3}
 --- !u!50 &7744258807544965520
 Rigidbody2D:
   serializedVersion: 4
