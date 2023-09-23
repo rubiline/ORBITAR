@@ -24,10 +24,11 @@ public class InputManager : MonoBehaviour
     private bool AHeld;
     private bool BHeld;
 
+    private bool _started = false;
+    private bool _playing = false;
+
     private void Awake()
     {
-        EnableGameplayControls(true);
-
         A.action.performed += DoA;
         B.action.performed += DoB;
         A.action.canceled += DoA;
@@ -35,6 +36,15 @@ public class InputManager : MonoBehaviour
         Move.action.performed += DoMove;
         Move.action.canceled += DoMove;
         Select.action.performed += DoDie;
+    }
+
+    private void Update()
+    {
+        if (!_playing && _started)
+        {
+            _playing = true;
+            LevelManager.Instance.FirstInput();
+        }
     }
 
     private void DoDie(CallbackContext ctx)
@@ -45,6 +55,7 @@ public class InputManager : MonoBehaviour
     private void DoA(CallbackContext ctx)
     {
         //if (BHeld) return;
+        if (!_started) _started = true;
         if (ctx.performed)
         {
             AHeld = true;
@@ -60,6 +71,7 @@ public class InputManager : MonoBehaviour
     private void DoB(CallbackContext ctx)
     {
         //if (AHeld) return;
+        if (!_started) _started = true;
         if (ctx.performed)
         {
             BHeld = true;
@@ -74,6 +86,7 @@ public class InputManager : MonoBehaviour
 
     private void DoMove(CallbackContext ctx)
     {
+        if (!_started) _started = true;
         controller.TriggerOffset(ctx.ReadValue<float>(), ctx.performed);
     }
 
@@ -90,7 +103,7 @@ public class InputManager : MonoBehaviour
         Select.action.performed -= DoDie;
     }
 
-    private void EnableGameplayControls(bool controls)
+    public void EnableGameplayControls(bool controls)
     {
         if (controls)
         {

@@ -86,6 +86,11 @@ public class MenuManager : MonoBehaviour
         AudioManager.Instance.PlaySFX("cancel");
     }
 
+    public void DestroyMenu()
+    {
+        GameObject.Destroy(focus.gameObject);
+    }
+
     public void SetFocus(MenuBox target)
     {
         if(focus != null && focus != target)

@@ -10,26 +10,23 @@ namespace Assets
 
         private PlayerController player;
         private BoxCollider2D boxCollider;
+        private VictoryScreen victoryScreen;
 
         // Use this for initialization
         void Start()
         {
             player = FindFirstObjectByType<PlayerController>();
             boxCollider = GetComponent<BoxCollider2D>();
+            victoryScreen = FindFirstObjectByType<VictoryScreen>(FindObjectsInactive.Include);
         }
 
         public void Finish()
         {
             boxCollider.enabled = false;
-            player.freeze = true;
 
-            // TODO: Victory Screen!
-
-            if (ToLevel.Equals("Cutscene"))
-            {
-                GameManager.Instance.CurrentCutscene = CutsceneName;
-            }
-            GameManager.Instance.LoadLevel(ToLevel);
+            LevelManager.Instance.OnPause(true);
+            victoryScreen.gameObject.SetActive(true);
+            victoryScreen.Setup(ToLevel, CutsceneName);
         }
     }
 }

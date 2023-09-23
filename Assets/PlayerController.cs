@@ -46,6 +46,8 @@ public class PlayerController : MonoBehaviour
     public bool locked;
     public bool freeze = false;
 
+    private bool started;
+
     public void ResetGravity()
     {
         gravityDir = Vector3.zero;
@@ -275,6 +277,7 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator DieCoroutine()
     {
+        
         StopRotation();
         moon.GetComponent<Collider2D>().enabled = false;
         sun.GetComponent<Collider2D>().enabled = false;

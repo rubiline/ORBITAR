@@ -118,21 +118,39 @@ public class AudioManager : MonoBehaviour
             squareTrack2.Stop();
             waveTrack.Stop();
             noiseTrack.Stop();
-            squareTrack.clip = Resources.Load<AudioClip>(musicPath + "/" + targetSong.name + "square");
-            squareTrack2.clip = Resources.Load<AudioClip>(musicPath + "/" + targetSong.name + "square2");
-            waveTrack.clip = Resources.Load<AudioClip>(musicPath + "/" + targetSong.name + "wave");
-            noiseTrack.clip = Resources.Load<AudioClip>(musicPath + "/" + targetSong.name + "noise");
-            squareTrack.Play();
-            squareTrack2.Play();
-            waveTrack.Play();
-            noiseTrack.Play();
-            musicPlaying = true;
+
+            StartCoroutine(LoadMusicAsync(targetSong));
         }
         catch (Exception e)
         {
             Debug.LogError(e);
             return;
         }
+    }
+
+    private IEnumerator LoadMusicAsync(MusicEntry targetSong)
+    {
+        ResourceRequest sq1 = Resources.LoadAsync<AudioClip>(musicPath + "/" + targetSong.name + "square");
+        ResourceRequest sq2 = Resources.LoadAsync<AudioClip>(musicPath + "/" + targetSong.name + "square2");
+        ResourceRequest wv = Resources.LoadAsync<AudioClip>(musicPath + "/" + targetSong.name + "wave");
+        ResourceRequest ns = Resources.LoadAsync<AudioClip>(musicPath + "/" + targetSong.name + "noise");
+
+        yield return sq1;
+        yield return sq2;
+        yield return wv;
+        yield return ns;
+
+        squareTrack.clip = (AudioClip)sq1.asset;
+        squareTrack2.clip = (AudioClip)sq2.asset;
+        waveTrack.clip = (AudioClip)wv.asset;
+        noiseTrack.clip = (AudioClip)ns.asset;
+
+        squareTrack.Play();
+        squareTrack2.Play();
+        waveTrack.Play();
+        noiseTrack.Play();
+
+        musicPlaying = true;
     }
 
     public void PauseMusic()

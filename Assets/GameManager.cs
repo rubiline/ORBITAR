@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public Material GBMaterial;
 
     public string CurrentCutscene;
+    public PauseControl PauseControl;
 
     private void Awake()
     {
@@ -38,8 +39,15 @@ public class GameManager : MonoBehaviour
 
     public void LoadLevel(string sceneName)
     {
+        PauseControl.Deregister();
         string n = _levelSelect ? "LevelSelect" : sceneName;
         LoadScene(n);
+    }
+
+    public void QuitLevel()
+    {
+        PauseControl.Deregister();
+        LoadScene("Title");
     }
 
     public void ResetLevel()

@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 189229a6e5f15ce478485f691fc4afb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelSelect: Bounce!
+  DebugLevel: 
 --- !u!4 &787592355
 Transform:
   m_ObjectHideFlags: 0
