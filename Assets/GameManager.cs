@@ -11,17 +11,12 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance => _instance;
     private static GameManager _instance;
 
+    private bool _levelSelect;
+
     [SerializeField] public MeshRenderer GBMesh;
     [HideInInspector] public Material GBMaterial;
 
     public string CurrentCutscene;
-
-    public string Level
-    {
-        get { return _level; }
-        set { _level = value; LoadScene(value); }
-    }
-    private string _level = "";
 
     private void Awake()
     {
@@ -41,21 +36,30 @@ public class GameManager : MonoBehaviour
         StartCoroutine(LoadAnimation(sceneName));
     }
 
+    public void LoadLevel(string sceneName)
+    {
+        string n = _levelSelect ? "LevelSelect" : sceneName;
+        LoadScene(n);
+    }
+
     public void ResetLevel()
     {
-        LoadScene(Level);
+        LoadScene(currentLoadedScene);
     }
 
     private IEnumerator LoadAnimation(string scene)
     {
+        string sceneToDelete = currentLoadedScene;
+        currentLoadedScene = scene;
+
         yield return Fade(1, 0, 1);
 
-        if (currentLoadedScene != "")
+        if (sceneToDelete != "")
         {
-            yield return SceneManager.UnloadSceneAsync(currentLoadedScene);
+            yield return SceneManager.UnloadSceneAsync(sceneToDelete);
         }
+        
         yield return SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
-        currentLoadedScene = scene;
 
         yield return Fade(0, 1, 1);
     }

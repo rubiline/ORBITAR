@@ -7,6 +7,7 @@ public class SpriteSwitch : MonoBehaviour
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Sprite idle;
     [SerializeField] private Sprite locked;
+    [SerializeField] private GameObject explosion;
 
     public void Lock()
     {
@@ -16,5 +17,11 @@ public class SpriteSwitch : MonoBehaviour
     public void Unlock()
     {
         spriteRenderer.sprite = idle;
+    }
+
+    public void Explode()
+    {
+        spriteRenderer.enabled = false;
+        explosion.SetActive(true);
     }
 }

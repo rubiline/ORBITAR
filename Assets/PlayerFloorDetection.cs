@@ -1,3 +1,4 @@
+using Assets;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -43,6 +44,14 @@ public class PlayerFloorDetection : MonoBehaviour
                 player.transform.parent = collision.transform;
                 stuckBody = true;
             } 
+        }
+
+        if (collision.CompareTag("Finish"))
+        {
+            if (player.SunLocked && !moon || player.MoonLocked && moon)
+            {
+                collision.GetComponent<FinishLine>().Finish();
+            }
         }
     }
 

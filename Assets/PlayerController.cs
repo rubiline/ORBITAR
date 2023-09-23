@@ -44,6 +44,7 @@ public class PlayerController : MonoBehaviour
     private bool offsetting;
     private float offsetDirection;
     public bool locked;
+    public bool freeze = false;
 
     public void ResetGravity()
     {
@@ -249,6 +250,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (freeze) return;
         if (offsetting) AlterOffset(offsetDirection, Time.deltaTime);
         currentAngularVelocity = angularSpeed * Time.deltaTime;
         //rb.SetRotation(rb.rotation + currentAngularVelocity * spin);
@@ -268,7 +270,20 @@ public class PlayerController : MonoBehaviour
 
     public void Die()
     {
-        Destroy(gameObject);
+        StartCoroutine(DieCoroutine());
+    }
+
+    IEnumerator DieCoroutine()
+    {
+        StopRotation();
+        moon.GetComponent<Collider2D>().enabled = false;
+        sun.GetComponent<Collider2D>().enabled = false;
+        moonSprite.Lock();
+        sunSprite.Lock();
+        moonSprite.Explode();
+        yield return new WaitForSeconds(0.4f);
+        sunSprite.Explode();
+        yield return new WaitForSeconds(0.2f);
         GameManager.Instance.ResetLevel();
     }
 

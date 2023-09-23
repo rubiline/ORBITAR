@@ -11388,6 +11388,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Finish Line
       objectReference: {fileID: 0}
+    - target: {fileID: 8463515464440200006, guid: 98aaa5ce82910d44d9776b6ae47968d0, type: 3}
+      propertyPath: ToLevel
+      value: Stage 1-2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

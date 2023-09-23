@@ -25,16 +25,12 @@ public class InputManager : MonoBehaviour
 
     private void Awake()
     {
-        A.action.Enable();
-        B.action.Enable();
+        EnableGameplayControls(true);
 
         A.action.performed += DoA;
         B.action.performed += DoB;
         A.action.canceled += DoA;
         B.action.canceled += DoB;
-
-        Move.action.Enable();
-
         Move.action.performed += DoMove;
         Move.action.canceled += DoMove;
     }
@@ -72,5 +68,32 @@ public class InputManager : MonoBehaviour
     private void DoMove(CallbackContext ctx)
     {
         controller.TriggerOffset(ctx.ReadValue<float>(), ctx.performed);
+    }
+
+    private void OnDestroy()
+    {
+        EnableGameplayControls(false);
+
+        A.action.performed -= DoA;
+        B.action.performed -= DoB;
+        A.action.canceled -= DoA;
+        B.action.canceled -= DoB;
+        Move.action.performed -= DoMove;
+        Move.action.canceled -= DoMove;
+    }
+
+    private void EnableGameplayControls(bool controls)
+    {
+        if (controls)
+        {
+            A.action.Enable();
+            B.action.Enable();
+            Move.action.Enable();
+        } else
+        {
+            A.action.Disable();
+            B.action.Disable();
+            Move.action.Disable();
+        }
     }
 }

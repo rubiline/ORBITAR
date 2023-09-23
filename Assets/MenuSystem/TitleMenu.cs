@@ -13,7 +13,7 @@ public class TitleMenu : MonoBehaviour
     {
         Action StartGame = () =>
         {
-            GameManager.Instance.Level = "Stage 1-1";
+            GameManager.Instance.LoadLevel("Stage 1-1");
         };
 
         List<MenuItem> items = new List<MenuItem>()
