@@ -36,7 +36,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Stage 2-2.unity
     guid: b8b54921c6c1dfe4d80a4d745b540308
   - enabled: 1
-    path: Assets/Scenes/Levels/Bounce!.unity
+    path: Assets/Scenes/Levels/Stage 3-1.unity
     guid: 5eb57b8a8a785794086b4d0b8ef8e5ee
   - enabled: 1
     path: Assets/Scenes/Levels/Don't Fall!.unity

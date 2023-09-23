@@ -34704,7 +34704,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1784346265515224257, guid: 11fb71ee53e127045a5dd410b4c05d5a, type: 3}
       propertyPath: angularSpeed
-      value: -120
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 1784346265515224257, guid: 11fb71ee53e127045a5dd410b4c05d5a, type: 3}
       propertyPath: gravityDir.y
