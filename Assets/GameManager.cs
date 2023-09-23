@@ -16,13 +16,12 @@ public class GameManager : MonoBehaviour
 
     public string CurrentCutscene;
 
-    public int[] Level
+    public string Level
     {
         get { return _level; }
-        set { _level = value; LoadLevel(value); }
+        set { _level = value; LoadScene(value); }
     }
-
-    private int[] _level = new int[2] { 1, 1 };
+    private string _level = "";
 
     private void Awake()
     {
@@ -42,14 +41,9 @@ public class GameManager : MonoBehaviour
         StartCoroutine(LoadAnimation(sceneName));
     }
 
-    public void LoadLevel(int[] level)
-    {
-        LoadScene("Stage " + level[0] + "-" + level[1]);
-    }
-
     public void ResetLevel()
     {
-        LoadLevel(Level);
+        LoadScene(Level);
     }
 
     private IEnumerator LoadAnimation(string scene)
