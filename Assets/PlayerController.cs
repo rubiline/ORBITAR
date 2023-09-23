@@ -266,6 +266,12 @@ public class PlayerController : MonoBehaviour
         this.transform.eulerAngles = this.transform.eulerAngles + new Vector3(0, 0, currentAngularVelocity * spin);
     }
 
+    public void Die()
+    {
+        Destroy(gameObject);
+        GameManager.Instance.ResetLevel();
+    }
+
     private Vector3 Quantize(Vector3 vector, int segments)
     {
         Vector3 comparator = Vector3.zero;

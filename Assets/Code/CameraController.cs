@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour
@@ -23,6 +21,7 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
+        if (!player) return;
         float smoothedSpeed = Mathf.Abs((this.transform.position - target.position).magnitude) * trackSmoothing;
         Vector3 aheadTarget = target.position + (player.MovementVector * player.MovementSpeed * lookAhead);
         if(player.SunLocked) 
