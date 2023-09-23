@@ -468,7 +468,9 @@ MonoBehaviour:
   target: {fileID: 0}
   trackSpeed: 8
   trackSmoothing: 1
-  lookAhead: 0
+  lookAhead: 0.25
+  spinDistance: 0.3
+  player: {fileID: 0}
 --- !u!4 &1150296171414301533 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7884994771275478669, guid: 0b74c178feb67b94589fbda3731cd2c2, type: 3}

@@ -37,12 +37,13 @@ public class PlayerController : MonoBehaviour
 
     public Vector3 MovementVector;
     public Mover CurrentInfluence;
+    public float MovementSpeed { get => linearSpeed; }
 
     private float currentAngularVelocity;
     private int spin;
     private bool offsetting;
     private float offsetDirection;
-    private bool locked;
+    public bool locked;
 
     public void ResetGravity()
     {
