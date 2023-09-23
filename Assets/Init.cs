@@ -5,9 +5,17 @@ using UnityEngine;
 public class Init : MonoBehaviour
 {
     // Start is called before the first frame update
+    [SerializeField] private string LevelSelect = "";
+
     void Start()
     {
-        GameManager.Instance.LoadScene("Cutscene");
-        Destroy(gameObject);
+        if (LevelSelect != "")
+        {
+            GameManager.Instance.LoadScene(LevelSelect);
+            Destroy(gameObject);
+        } else { 
+            GameManager.Instance.LoadScene("Cutscene");
+            Destroy(gameObject);
+        }
     }
 }
