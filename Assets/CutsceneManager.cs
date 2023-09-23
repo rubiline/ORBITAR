@@ -29,20 +29,25 @@ public class CutsceneManager : MonoBehaviour
         }
     }
 
-    void Advance()
+    public void Advance()
     {
-        _index++;
         SlideshowHost.sprite = _currentCutscene.Slideshow[_index];
+        _index++;
     }
 
     public void FadeIn()
     {
-        StartCoroutine(Fade(0, 1, 1));
+        StartCoroutine(Fade(0, 1, 0.3f));
     }
 
     public void FadeOut()
     {
-        StartCoroutine(Fade(1, 0, 1));
+        StartCoroutine(Fade(1, 0, 0.3f));
+    }
+
+    public void LoadScene()
+    {
+        GameManager.Instance.LoadScene(_currentCutscene.SceneToLoad);
     }
 
     private IEnumerator Fade(float from, float to, float time)
@@ -51,8 +56,8 @@ public class CutsceneManager : MonoBehaviour
         while (currentTime < time)
         {
             currentTime += Time.deltaTime;
-            GameManager.Instance.GBMaterial.SetFloat("Fade", Mathf.Lerp(from, to, time - currentTime));
-            yield return null;
+            GameManager.Instance.GBMaterial.SetFloat("_Fade", Mathf.Lerp(from, to, currentTime / time));
+            yield return new WaitForEndOfFrame();
         }
     }
 

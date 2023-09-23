@@ -10,4 +10,5 @@ public class Cutscene : ScriptableObject
     public List<Sprite> Slideshow;
     public List<string> Text;
     public TimelineAsset Timing;
+    public string SceneToLoad;
 }

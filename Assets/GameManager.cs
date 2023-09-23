@@ -7,11 +7,12 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    private string currentLoadedScene;
+    private string currentLoadedScene = "";
     public static GameManager Instance => _instance;
     private static GameManager _instance;
 
-    [SerializeField] public Material GBMaterial;
+    [SerializeField] public MeshRenderer GBMesh;
+    [HideInInspector] public Material GBMaterial;
 
     public string CurrentCutscene;
 
@@ -27,10 +28,13 @@ public class GameManager : MonoBehaviour
     {
         if (Instance != null)
         {
-            Destroy(Instance);
+            Destroy(this);
+        } else
+        {
+            _instance = this;
         }
 
-        _instance = this;
+        GBMaterial = GBMesh.material;
     }
 
     public void LoadScene(string sceneName)
@@ -45,11 +49,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator LoadAnimation(string scene)
     {
-        while (GBMaterial.GetFloat("Fade") > 0)
-        {
-            GBMaterial.SetFloat("Fade", GBMaterial.GetFloat("Fade") - Time.deltaTime);
-            yield return null;
-        }
+        yield return Fade(1, 0, 1);
 
         if (currentLoadedScene != "")
         {
@@ -58,10 +58,16 @@ public class GameManager : MonoBehaviour
         yield return SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
         currentLoadedScene = scene;
 
-        while (GBMaterial.GetFloat("Fade") < 1)
+        yield return Fade(0, 1, 1);
+    }
+    private IEnumerator Fade(float from, float to, float time)
+    {
+        float currentTime = 0;
+        while (currentTime < time)
         {
-            GBMaterial.SetFloat("Fade", GBMaterial.GetFloat("Fade") + Time.deltaTime);
-            yield return null;
+            currentTime += Time.deltaTime;
+            GameManager.Instance.GBMaterial.SetFloat("_Fade", Mathf.Lerp(from, to, currentTime / time));
+            yield return new WaitForEndOfFrame();
         }
     }
 }
