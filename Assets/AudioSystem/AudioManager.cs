@@ -14,6 +14,8 @@ public class AudioManager : MonoBehaviour
 
     public MusicEntry targetSong;
 
+    public bool musicPlaying;
+
     private AudioSource sfxSquareTrack;
     private AudioSource sfxNoiseTrack;
     private AudioSource sfxWaveTrack;
@@ -124,12 +126,39 @@ public class AudioManager : MonoBehaviour
             squareTrack2.Play();
             waveTrack.Play();
             noiseTrack.Play();
+            musicPlaying = true;
         }
         catch (Exception e)
         {
             Debug.LogError(e);
             return;
         }
+    }
+
+    public void PauseMusic()
+    {
+        if (musicPlaying)
+        {
+            squareTrack.Pause();
+            squareTrack2.Pause();
+            noiseTrack.Pause();
+            waveTrack.Pause();
+            musicPlaying = false;
+        }
+        else throw new Exception("no music currently playing to pause");
+    }
+
+    public void ResumeMusic()
+    {
+        if(!musicPlaying)
+        {
+            squareTrack.Play();
+            squareTrack2.Play();
+            waveTrack.Play();
+            noiseTrack.Play();
+            musicPlaying = true;
+        }
+        else throw new Exception("music already playing");
     }
 
     [System.Serializable]

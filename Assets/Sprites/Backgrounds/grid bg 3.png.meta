@@ -1,0 +1,1349 @@
+fileFormatVersion: 2
+guid: 04d067b37e23f8241bb9c9980d90d13c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4256201413062425531
+    second: grid bg 3_0
+  - first:
+      213: -4976180133997682857
+    second: grid bg 3_1
+  - first:
+      213: 5290390580211968147
+    second: grid bg 3_2
+  - first:
+      213: 7920017414416633694
+    second: grid bg 3_3
+  - first:
+      213: -4178883756799188594
+    second: grid bg 3_4
+  - first:
+      213: -8792245004403842368
+    second: grid bg 3_5
+  - first:
+      213: -6220459037932349167
+    second: grid bg 3_6
+  - first:
+      213: -8301798816169769640
+    second: grid bg 3_7
+  - first:
+      213: -9193285375963615944
+    second: grid bg 3_8
+  - first:
+      213: 8148769859709613733
+    second: grid bg 3_9
+  - first:
+      213: -5319056053595206445
+    second: grid bg 3_10
+  - first:
+      213: 8108792615349141997
+    second: grid bg 3_11
+  - first:
+      213: 5087743271648821332
+    second: grid bg 3_12
+  - first:
+      213: -4344560282873328439
+    second: grid bg 3_13
+  - first:
+      213: 6419611987765625530
+    second: grid bg 3_14
+  - first:
+      213: -1982640836520354328
+    second: grid bg 3_15
+  - first:
+      213: 5139230220305950617
+    second: grid bg 3_16
+  - first:
+      213: -8632363798641365269
+    second: grid bg 3_17
+  - first:
+      213: -7091850094785074891
+    second: grid bg 3_18
+  - first:
+      213: 6411670008135423655
+    second: grid bg 3_19
+  - first:
+      213: -7040211933637188096
+    second: grid bg 3_20
+  - first:
+      213: 8184277317614157279
+    second: grid bg 3_21
+  - first:
+      213: 2548312619330056819
+    second: grid bg 3_22
+  - first:
+      213: 7750974186430458805
+    second: grid bg 3_23
+  - first:
+      213: 527502759954601664
+    second: grid bg 3_24
+  - first:
+      213: 2835679761477233865
+    second: grid bg 3_25
+  - first:
+      213: 2903161989415782532
+    second: grid bg 3_26
+  - first:
+      213: 3254399519355482904
+    second: grid bg 3_27
+  - first:
+      213: -1972537720928088454
+    second: grid bg 3_28
+  - first:
+      213: -6301656896417619122
+    second: grid bg 3_29
+  - first:
+      213: 5405522991894587792
+    second: grid bg 3_30
+  - first:
+      213: 4624152007908135879
+    second: grid bg 3_31
+  - first:
+      213: -8495154397593973649
+    second: grid bg 3_32
+  - first:
+      213: 4978913180032465787
+    second: grid bg 3_33
+  - first:
+      213: 2810737901061319270
+    second: grid bg 3_34
+  - first:
+      213: 6041728526367821839
+    second: grid bg 3_35
+  - first:
+      213: -2111730364787219187
+    second: grid bg 3_36
+  - first:
+      213: -8225600521890448357
+    second: grid bg 3_37
+  - first:
+      213: -2966700795829147457
+    second: grid bg 3_38
+  - first:
+      213: -196284604148301532
+    second: grid bg 3_39
+  - first:
+      213: 3136096320429817418
+    second: grid bg 3_40
+  - first:
+      213: -890194486682910618
+    second: grid bg 3_41
+  - first:
+      213: 225051269848520207
+    second: grid bg 3_42
+  - first:
+      213: 7088482420970489758
+    second: grid bg 3_43
+  - first:
+      213: -1027023190159915533
+    second: grid bg 3_44
+  - first:
+      213: -8151471930691439539
+    second: grid bg 3_45
+  - first:
+      213: 7143706089101547097
+    second: grid bg 3_46
+  - first:
+      213: 5213348631062306403
+    second: grid bg 3_47
+  - first:
+      213: -4692816761633338382
+    second: grid bg 3_48
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 0
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: grid bg 3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 220
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbbf91682a0111b30800000000000000
+      internalID: 4256201413062425531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 220
+        width: 8
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75f56b6788e01fab0800000000000000
+      internalID: -4976180133997682857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_2
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 220
+        width: 8
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3986b98f33e3b6940800000000000000
+      internalID: 5290390580211968147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_3
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 220
+        width: 8
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5f063950ed89ed60800000000000000
+      internalID: 7920017414416633694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_4
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 220
+        width: 8
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e81a5562d5f9106c0800000000000000
+      internalID: -4178883756799188594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_5
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 220
+        width: 8
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c26e4670cbabf580800000000000000
+      internalID: -8792245004403842368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_6
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 220
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1199c20667d7ca9a0800000000000000
+      internalID: -6220459037932349167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 188
+        width: 36
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 855417526f51acc80800000000000000
+      internalID: -8301798816169769640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_8
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 188
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83d25ee98a3ea6080800000000000000
+      internalID: -9193285375963615944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_9
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 188
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a6b66c630f361170800000000000000
+      internalID: 8148769859709613733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_10
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 188
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dc011963baee26b0800000000000000
+      internalID: -5319056053595206445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_11
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 188
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de14233ebe7388070800000000000000
+      internalID: 8108792615349141997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_12
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 188
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 450030fac8b4b9640800000000000000
+      internalID: 5087743271648821332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_13
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 188
+        width: 36
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cc8012f07505b3c0800000000000000
+      internalID: -4344560282873328439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 156
+        width: 36
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab20c9e171b071950800000000000000
+      internalID: 6419611987765625530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_15
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 156
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ed5506e9ae3c74e0800000000000000
+      internalID: -1982640836520354328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_16
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 156
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 997e94418a6325740800000000000000
+      internalID: 5139230220305950617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_17
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 156
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bee2a028cdea33880800000000000000
+      internalID: -8632363798641365269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_18
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 156
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 539e30cb9efa49d90800000000000000
+      internalID: -7091850094785074891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_19
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 156
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a610f3e6e3daf850800000000000000
+      internalID: 6411670008135423655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_20
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 156
+        width: 36
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 006e6180c842c4e90800000000000000
+      internalID: -7040211933637188096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 124
+        width: 36
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fddbda3bbd4649170800000000000000
+      internalID: 8184277317614157279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_22
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 124
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37230d363dc6d5320800000000000000
+      internalID: 2548312619330056819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_23
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 124
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bbe865c4fdf09b60800000000000000
+      internalID: 7750974186430458805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_24
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 124
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c6d12127f0125700800000000000000
+      internalID: 527502759954601664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_25
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 124
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cc6d9f08bb5a5720800000000000000
+      internalID: 2835679761477233865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_26
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 124
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4884b80a27a1a4820800000000000000
+      internalID: 2903161989415782532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_27
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 124
+        width: 36
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 813b26cce13f92d20800000000000000
+      internalID: 3254399519355482904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 92
+        width: 36
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7ec50ec46320a4e0800000000000000
+      internalID: -1972537720928088454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_29
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 92
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4323a8b0740c88a0800000000000000
+      internalID: -6301656896417619122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_30
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 92
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 099651d7586440b40800000000000000
+      internalID: 5405522991894587792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_31
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 92
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c316ca50c94c2040800000000000000
+      internalID: 4624152007908135879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_32
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 92
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6c405ba5162b1a80800000000000000
+      internalID: -8495154397593973649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_33
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 92
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7b78576827a81540800000000000000
+      internalID: 4978913180032465787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_34
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 92
+        width: 36
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66aac75aa3fb10720800000000000000
+      internalID: 2810737901061319270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 60
+        width: 36
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f009f73951888d350800000000000000
+      internalID: 6041728526367821839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_36
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 60
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d05a371fb60a1b2e0800000000000000
+      internalID: -2111730364787219187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_37
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 60
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1cb37c08ebc8dd80800000000000000
+      internalID: -8225600521890448357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_38
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 60
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb82cbd285924d6d0800000000000000
+      internalID: -2966700795829147457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_39
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 60
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 421ccd64138a64df0800000000000000
+      internalID: -196284604148301532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_40
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 60
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4ef0a8dcf6a58b20800000000000000
+      internalID: 3136096320429817418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_41
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 60
+        width: 36
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6600140b4d465a3f0800000000000000
+      internalID: -890194486682910618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f06529300fa8f1300800000000000000
+      internalID: 225051269848520207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_43
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 8
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e970c8a94395f5260800000000000000
+      internalID: 7088482420970489758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_44
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 0
+        width: 8
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f50e6699d74fb1f0800000000000000
+      internalID: -1027023190159915533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_45
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 0
+        width: 8
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d44b196a77720ee80800000000000000
+      internalID: -8151471930691439539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_46
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 0
+        width: 8
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95651bcc6da832360800000000000000
+      internalID: 7143706089101547097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_47
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 0
+        width: 8
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36edcbc55f8895840800000000000000
+      internalID: 5213348631062306403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grid bg 3_48
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 0
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fb88d6d404cfdeb0800000000000000
+      internalID: -4692816761633338382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      grid bg 3_0: 4256201413062425531
+      grid bg 3_1: -4976180133997682857
+      grid bg 3_10: -5319056053595206445
+      grid bg 3_11: 8108792615349141997
+      grid bg 3_12: 5087743271648821332
+      grid bg 3_13: -4344560282873328439
+      grid bg 3_14: 6419611987765625530
+      grid bg 3_15: -1982640836520354328
+      grid bg 3_16: 5139230220305950617
+      grid bg 3_17: -8632363798641365269
+      grid bg 3_18: -7091850094785074891
+      grid bg 3_19: 6411670008135423655
+      grid bg 3_2: 5290390580211968147
+      grid bg 3_20: -7040211933637188096
+      grid bg 3_21: 8184277317614157279
+      grid bg 3_22: 2548312619330056819
+      grid bg 3_23: 7750974186430458805
+      grid bg 3_24: 527502759954601664
+      grid bg 3_25: 2835679761477233865
+      grid bg 3_26: 2903161989415782532
+      grid bg 3_27: 3254399519355482904
+      grid bg 3_28: -1972537720928088454
+      grid bg 3_29: -6301656896417619122
+      grid bg 3_3: 7920017414416633694
+      grid bg 3_30: 5405522991894587792
+      grid bg 3_31: 4624152007908135879
+      grid bg 3_32: -8495154397593973649
+      grid bg 3_33: 4978913180032465787
+      grid bg 3_34: 2810737901061319270
+      grid bg 3_35: 6041728526367821839
+      grid bg 3_36: -2111730364787219187
+      grid bg 3_37: -8225600521890448357
+      grid bg 3_38: -2966700795829147457
+      grid bg 3_39: -196284604148301532
+      grid bg 3_4: -4178883756799188594
+      grid bg 3_40: 3136096320429817418
+      grid bg 3_41: -890194486682910618
+      grid bg 3_42: 225051269848520207
+      grid bg 3_43: 7088482420970489758
+      grid bg 3_44: -1027023190159915533
+      grid bg 3_45: -8151471930691439539
+      grid bg 3_46: 7143706089101547097
+      grid bg 3_47: 5213348631062306403
+      grid bg 3_48: -4692816761633338382
+      grid bg 3_5: -8792245004403842368
+      grid bg 3_6: -6220459037932349167
+      grid bg 3_7: -8301798816169769640
+      grid bg 3_8: -9193285375963615944
+      grid bg 3_9: 8148769859709613733
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
