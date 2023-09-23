@@ -54,11 +54,18 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 500ab280914b261458bfa2caf9d27f23, type: 3}
     channel: 1
     looping: 0
+  - name: Bounce
+    clip: {fileID: 8300000, guid: 6ceea64c8f753c24da1da7a4c6a22412, type: 3}
+    channel: 0
+    looping: 0
   music:
   - name: DISTANT_NEBULA
     hasIntro: 0
   musicPath: Music
   effectsPath: FX
+  targetSong:
+    name: 
+    hasIntro: 0
 --- !u!81 &-6241007696829968289
 AudioListener:
   m_ObjectHideFlags: 0

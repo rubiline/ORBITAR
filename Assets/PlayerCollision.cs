@@ -30,6 +30,7 @@ public class PlayerCollision : MonoBehaviour
             Vector3 normal = collision.contacts[0].normal;
             player.ReverseRotation();
             player.MovementVector = player.MovementVector - (2 * (Vector3.Dot(player.MovementVector, normal) * normal));
+            AudioManager.Instance.PlaySFX("Bounce");
         }
     }
 }
