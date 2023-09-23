@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Stage 1-5.unity
     guid: 3fd2f4839d3464242a206a236000b8b7
   - enabled: 1
-    path: Assets/Scenes/Levels/Around the Bend.unity
+    path: Assets/Scenes/Levels/Stage 2-1.unity
     guid: ae9c328f49be974459bc2e1b584d1384
   - enabled: 1
     path: Assets/Scenes/Levels/Bounce!.unity
