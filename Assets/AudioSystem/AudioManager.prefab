@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4562366041757944624}
   - component: {fileID: 7727650154633646717}
+  - component: {fileID: -6241007696829968289}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -58,3 +59,11 @@ MonoBehaviour:
     hasIntro: 0
   musicPath: Music
   effectsPath: FX
+--- !u!81 &-6241007696829968289
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009548967318058484}
+  m_Enabled: 1

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 439870}
   - component: {fileID: 2043858}
   - component: {fileID: 12409500}
-  - component: {fileID: 8127094}
   m_Layer: 0
   m_Name: Game Camera - RENDERS TO TEXTURE
   m_TagString: Untagged
@@ -87,14 +86,6 @@ Camera:
   m_StereoSeparation: 0.022
 --- !u!124 &12409500
 Behaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 113942}
-  m_Enabled: 1
---- !u!81 &8127094
-AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}

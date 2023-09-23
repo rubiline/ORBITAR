@@ -28,13 +28,13 @@ public class AudioManager : MonoBehaviour
         //singleton
         if (Instance != null && Instance != this)
         {
-            Destroy(this);
+            Destroy(this.gameObject);
         }
         else
         {
             Instance = this;
         }
-        DontDestroyOnLoad(this.gameObject);
+
         //assign tracks
         sfxSquareTrack = this.gameObject.AddComponent<AudioSource>();
         sfxNoiseTrack = this.gameObject.AddComponent<AudioSource>();
