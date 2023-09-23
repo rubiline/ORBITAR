@@ -22,7 +22,10 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         timerText = GameObject.Find("Timer").GetComponent<TextMeshProUGUI>();
-        AudioManager.Instance.PlayMusic(music);
+        if (AudioManager.Instance.targetSong.name != music)
+        {
+            AudioManager.Instance.PlayMusic(music);
+        }
         StartTimer();
         currentTime = new TimeSpan(0);
     }

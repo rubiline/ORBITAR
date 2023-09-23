@@ -22,13 +22,13 @@ public class GameManager : MonoBehaviour
         set { _level = value; LoadLevel(value); }
     }
 
-    private int[] _level = new int[2];
+    private int[] _level = new int[2] { 1, 1 };
 
     private void Awake()
     {
         if (Instance != null)
         {
-            Destroy(this);
+            Destroy(this.gameObject);
         } else
         {
             _instance = this;
@@ -45,6 +45,11 @@ public class GameManager : MonoBehaviour
     public void LoadLevel(int[] level)
     {
         LoadScene("Stage " + level[0] + "-" + level[1]);
+    }
+
+    public void ResetLevel()
+    {
+        LoadLevel(Level);
     }
 
     private IEnumerator LoadAnimation(string scene)

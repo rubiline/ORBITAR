@@ -12,6 +12,8 @@ public class AudioManager : MonoBehaviour
     public string musicPath;
     public string effectsPath;
 
+    public MusicEntry targetSong;
+
     private AudioSource sfxSquareTrack;
     private AudioSource sfxNoiseTrack;
     private AudioSource sfxWaveTrack;
@@ -109,7 +111,7 @@ public class AudioManager : MonoBehaviour
     {
         try
         {
-            MusicEntry targetSong = musicList[song];
+            targetSong = musicList[song];
             squareTrack.Stop();
             squareTrack2.Stop();
             waveTrack.Stop();
