@@ -1,12 +1,9 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
 using TMPro;
-using UnityEditor.SceneManagement;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -104,6 +101,10 @@ public class LevelManager : MonoBehaviour
     public void OnPause(bool pause)
     {
         PlayerController.freeze = pause;
+        if (lss != null)
+        {
+            lss.gameObject.SetActive(false);
+        }
         
         if (timer != null)
         {
