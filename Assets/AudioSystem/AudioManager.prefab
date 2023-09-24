@@ -47,15 +47,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effects:
   - name: Lock
-    clip: {fileID: 8300000, guid: 85fa3f4c71bf95e4d8e598bd82c181c0, type: 3}
-    channel: 2
+    clip: {fileID: 8300000, guid: ae69a5de3cb442c47ae6508751220cd8, type: 3}
+    channel: 1
     looping: 0
   - name: Release
     clip: {fileID: 8300000, guid: 500ab280914b261458bfa2caf9d27f23, type: 3}
     channel: 1
     looping: 0
+  - name: select
+    clip: {fileID: 8300000, guid: fea2d9f4ed352d24da0f547fe643e3b8, type: 3}
+    channel: 0
+    looping: 0
+  - name: tick
+    clip: {fileID: 8300000, guid: 80b8d8d5e5395774d8f813310e44814d, type: 3}
+    channel: 1
+    looping: 0
+  - name: explode
+    clip: {fileID: 8300000, guid: e64bf5f411236034eb06ffd1ef8d6028, type: 3}
+    channel: 2
+    looping: 0
+  - name: cancel
+    clip: {fileID: 8300000, guid: 305f13b6ff4dd7f499caa644fc2f9ab8, type: 3}
+    channel: 0
+    looping: 0
   - name: Bounce
-    clip: {fileID: 8300000, guid: 6ceea64c8f753c24da1da7a4c6a22412, type: 3}
+    clip: {fileID: 8300000, guid: 585e88109cf620e4fbff391b3806cb12, type: 3}
     channel: 0
     looping: 0
   music:
@@ -66,6 +82,7 @@ MonoBehaviour:
   targetSong:
     name: 
     hasIntro: 0
+  musicPlaying: 0
 --- !u!81 &-6241007696829968289
 AudioListener:
   m_ObjectHideFlags: 0
