@@ -14,9 +14,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: Intro
   Slideshow:
-  - {fileID: 21300000, guid: a51cc4b82e3d1b04d8bc47a771cab084, type: 3}
-  - {fileID: -7747215032325969890, guid: 2ce40f41c55864648ae598d6f787de78, type: 3}
-  - {fileID: 8064471705471617369, guid: e85c4b96eeb5e5342a8117ee39836af9, type: 3}
-  Text: []
+  - {fileID: 21300000, guid: d7e10db6d2bc32043958ac2bb19c1886, type: 3}
+  - {fileID: -340940080780981850, guid: 4274b9eb96eeb974c8ad85f34bbef217, type: 3}
+  - {fileID: 732581709833602448, guid: ff1da2a2a6dec88428d5f01811df1a39, type: 3}
+  - {fileID: -6129595065361856029, guid: c58de4d7ec980ce489949ed18a6eed32, type: 3}
+  - {fileID: 2688614985576275456, guid: 6554da40fde9c744ba36a352feedacef, type: 3}
+  - {fileID: 732581709833602448, guid: ff1da2a2a6dec88428d5f01811df1a39, type: 3}
+  - {fileID: -1627096780178665921, guid: 4d8d4d7b4a95e3b4c8408f35086651af, type: 3}
+  - {fileID: 7402075421915102227, guid: 880f45179d376e040820387fb63bc10a, type: 3}
+  - {fileID: -6129595065361856029, guid: c58de4d7ec980ce489949ed18a6eed32, type: 3}
+  - {fileID: 732581709833602448, guid: ff1da2a2a6dec88428d5f01811df1a39, type: 3}
+  Text:
+  - Text: 'Ah. The Earth has '
+    Box: 0
+  - Text: finally exploded.
+    Box: 0
+  - Text: 'Mm. Was it always going '
+    Box: 1
+  - Text: to do that?
+    Box: 1
+  - Text: Indeed, indeed.
+    Box: 0
+  - Text: ...
+    Box: 1
+  - Text: But I orbit that!
+    Box: 0
+  - Text: 'Yes, so do I. '
+    Box: 1
+  - Text: 'That''s exactly how '
+    Box: 1
+  - Text: that works.
+    Box: 1
+  - Text: Hrmmm...
+    Box: 1
+  - Text: I suppose we must
+    Box: 1
+  - Text: find a new planet
+    Box: 1
+  - Text: to orbit!
+    Box: 1
+  - Text: Let's go!
+    Box: 0
+  Animations:
+  - Prefab: {fileID: 1032201817496322205, guid: aeded33366c005141a3316286d8e51e8, type: 3}
+    Time: 1
+    Location: {x: 0, y: 0, z: 0}
   Timing: {fileID: 11400000, guid: 691b4a51a51cc9944b34b7d0d3558b55, type: 2}
   SceneToLoad: Title
+  ShowBox1: 1
+  ShowBox2: 1
+  ShowBox3: 0
