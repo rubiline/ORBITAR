@@ -8,10 +8,12 @@ public class SpriteSwitch : MonoBehaviour
     [SerializeField] private Sprite idle;
     [SerializeField] private Sprite locked;
     [SerializeField] private GameObject explosion;
+    [SerializeField] private GameObject sparkle;
 
     public void Lock()
     {
         spriteRenderer.sprite = locked;
+        Sparkle();
     }
 
     public void Unlock()
@@ -23,5 +25,17 @@ public class SpriteSwitch : MonoBehaviour
     {
         spriteRenderer.enabled = false;
         explosion.SetActive(true);
+    }
+
+    public void Sparkle()
+    {
+        StartCoroutine(SparkleCoroutine());
+    }
+
+    private IEnumerator SparkleCoroutine()
+    {
+        sparkle.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        sparkle.SetActive(false);
     }
 }
