@@ -13,6 +13,8 @@ public class DialogueTextBox
 
     public TextMeshPro logTextBox;
 
+    private Coroutine text;
+
 
     public void SetText(string tgt)
     {
@@ -24,6 +26,7 @@ public class DialogueTextBox
 
     public void ClearText()
     {
+        StopCoroutine(text);
         actualText = "";
         logTextBox.text = "";
     }
@@ -42,7 +45,7 @@ public class DialogueTextBox
 
             //set to go to the next
             index += 1;
-            StartCoroutine(PauseBetweenChars(letter));
+            text = StartCoroutine(PauseBetweenChars(letter));
         }
     }
 
