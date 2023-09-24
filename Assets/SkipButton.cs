@@ -11,7 +11,7 @@ public class SkipButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z)) Skip();
+        if (Input.GetKeyDown(KeyCode.Return)) Skip();
     }
 
     void Skip()
