@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Title.unity
     guid: 1ce008e08f4ad5e4c9105a0f95ed7568
   - enabled: 1
+    path: Assets/Scenes/LevelSelect.unity
+    guid: ffe12521a385e434787804d505f32d93
+  - enabled: 1
     path: Assets/Scenes/Levels/Stage 1-1.unity
     guid: 338ad3a8d55879440b47f44c84007405
   - enabled: 1
@@ -36,8 +39,20 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Stage 2-2.unity
     guid: b8b54921c6c1dfe4d80a4d745b540308
   - enabled: 1
+    path: Assets/Scenes/Levels/Stage 2-3.unity
+    guid: 7fff58d36d5fe9a469f47dae800e3841
+  - enabled: 1
+    path: Assets/Scenes/Levels/Stage 2-4.unity
+    guid: d25b63a6c8f25eb47ac5434b10914125
+  - enabled: 1
+    path: Assets/Scenes/Levels/Stage 2-5.unity
+    guid: b6f34224da55ff1488c21c14b9121afe
+  - enabled: 1
     path: Assets/Scenes/Levels/Stage 3-1.unity
     guid: 5eb57b8a8a785794086b4d0b8ef8e5ee
+  - enabled: 1
+    path: Assets/Scenes/Levels/Stage 3-2.unity
+    guid: fdbd4fcfe2f75c64bafaf5a32c7bdfd9
   - enabled: 1
     path: Assets/Scenes/Levels/Don't Fall!.unity
     guid: 0a331a74ae1f37a46a44a9b2e9f79cb8

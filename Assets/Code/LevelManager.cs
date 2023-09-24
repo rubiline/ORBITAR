@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
 using TMPro;
+using UnityEditor.SceneManagement;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -60,6 +62,9 @@ public class LevelManager : MonoBehaviour
     {
         PlayerController = FindFirstObjectByType<PlayerController>();
 
+        string stage = GameManager.Instance.currentLoadedScene;
+        PlayerPrefs.SetString("continue", stage);
+
         StartCoroutine(StartLevel());
     }
 
@@ -67,12 +72,9 @@ public class LevelManager : MonoBehaviour
     {
         timerText = GameObject.Find("Timer").GetComponent<TextMeshProUGUI>();
         lss = FindFirstObjectByType<LevelStartScreen>(FindObjectsInactive.Include);
-        yield return new WaitForSeconds(1f);
-
         lss.gameObject.SetActive(true);
         lss.SetLevelTitle(levelName);
-
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
 
         GameManager.Instance.PauseControl.Register();
         GameManager.Instance.PauseControl.ToGameplay();
@@ -130,7 +132,11 @@ public class LevelManager : MonoBehaviour
             res = LevelResult.BRONZE;
         }
 
-        // TODO: Save
+        string stage = GameManager.Instance.currentLoadedScene;
+
+        PlayerPrefs.SetInt(stage + "_completed", 1);
+        PlayerPrefs.SetString(stage + "_time", currentTime.ToString(@"m\:ss\.fff"));
+        PlayerPrefs.SetInt(stage + "_medal", (int)res);
 
         return res;
     }
@@ -159,8 +165,8 @@ public class LevelManager : MonoBehaviour
     public enum LevelResult
     {
         NONE,
-        BRONZE,
+        GOLD,
         SILVER,
-        GOLD
+        BRONZE
     }
 }

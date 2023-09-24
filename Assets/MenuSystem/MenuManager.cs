@@ -159,6 +159,7 @@ public class MenuManager : MonoBehaviour
         newBox.width = width;
         newBox.height = height;
         newBox.parent = focus;
+        newBox.textContent = text;
         newBox.DrawBox();
         return newBox;
     }
@@ -171,6 +172,7 @@ public class MenuManager : MonoBehaviour
         newBox.width = width;
         newBox.height = height;
         newBox.parent = parent;
+        newBox.textContent = text;
         newBox.DrawBox();
         return newBox;
     }
