@@ -132,6 +132,18 @@ PrefabInstance:
       propertyPath: levelName
       value: Quick Turns
       objectReference: {fileID: 0}
+    - target: {fileID: 912667142077111707, guid: 0bcadbbb40dfd7b488babcdee37c219c, type: 3}
+      propertyPath: goldTimeString
+      value: 0:35.000
+      objectReference: {fileID: 0}
+    - target: {fileID: 912667142077111707, guid: 0bcadbbb40dfd7b488babcdee37c219c, type: 3}
+      propertyPath: bronzeTimeString
+      value: 1:00.000
+      objectReference: {fileID: 0}
+    - target: {fileID: 912667142077111707, guid: 0bcadbbb40dfd7b488babcdee37c219c, type: 3}
+      propertyPath: silverTimeString
+      value: 0:45.000
+      objectReference: {fileID: 0}
     - target: {fileID: 2341933198245111357, guid: 0bcadbbb40dfd7b488babcdee37c219c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

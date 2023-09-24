@@ -2968,7 +2968,7 @@ MonoBehaviour:
   trackSpeed: 8
   trackSmoothing: 1
   lookAhead: 0.25
-  spinDistance: 0.5
+  spinDistance: 0.7
   player: {fileID: 0}
 --- !u!4 &1150296171414301533 stripped
 Transform:
