@@ -22,10 +22,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float gravityPower;
     [SerializeField] private float maxVelocity;
 
-    [SerializeField] private Transform sun;
+    [SerializeField] public Transform sun;
     public bool SunGrounded;
     public bool SunLocked;
-    [SerializeField] private Transform moon;
+    [SerializeField] public Transform moon;
     public bool MoonGrounded;
     public bool MoonLocked;
 
@@ -270,22 +270,23 @@ public class PlayerController : MonoBehaviour
         this.transform.eulerAngles = this.transform.eulerAngles + new Vector3(0, 0, currentAngularVelocity * spin);
     }
 
-    public void Die()
+    public void Die(bool isMoon)
     {
-        StartCoroutine(DieCoroutine());
+        StartCoroutine(DieCoroutine(isMoon));
     }
 
-    IEnumerator DieCoroutine()
+    IEnumerator DieCoroutine(bool isMoon)
     {
-        
+        SpriteSwitch first = isMoon ? moonSprite : sunSprite;
+        SpriteSwitch second = isMoon ? sunSprite : moonSprite;
         StopRotation();
-        moon.GetComponent<Collider2D>().enabled = false;
-        sun.GetComponent<Collider2D>().enabled = false;
-        moonSprite.Lock();
-        sunSprite.Lock();
-        moonSprite.Explode();
+        first.GetComponent<Collider2D>().enabled = false;
+        second.GetComponent<Collider2D>().enabled = false;
+        first.Lock();
+        second.Lock();
+        first.Explode();
         yield return new WaitForSeconds(0.4f);
-        sunSprite.Explode();
+        second.Explode();
         yield return new WaitForSeconds(0.2f);
         GameManager.Instance.ResetLevel();
     }
