@@ -11171,6 +11171,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3797252729903464790, guid: f444655c2a59c614588d7b69512bba94, type: 3}
+      propertyPath: SunShowing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3797252729903464790, guid: f444655c2a59c614588d7b69512bba94, type: 3}
+      propertyPath: Dialogue.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3797252729903464790, guid: f444655c2a59c614588d7b69512bba94, type: 3}
+      propertyPath: 'Dialogue.Array.data[0]'
+      value: 'Sun: If you orbit around me'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3797252729903464790, guid: f444655c2a59c614588d7b69512bba94, type: 3}
+      propertyPath: 'Dialogue.Array.data[1]'
+      value: 'Moon: And you orbit around me'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3797252729903464790, guid: f444655c2a59c614588d7b69512bba94, type: 3}
+      propertyPath: 'Dialogue.Array.data[2]'
+      value: 'Sun: With the B button'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3797252729903464790, guid: f444655c2a59c614588d7b69512bba94, type: 3}
+      propertyPath: 'Dialogue.Array.data[3]'
+      value: 'Moon: And the A button'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3797252729903464790, guid: f444655c2a59c614588d7b69512bba94, type: 3}
+      propertyPath: 'Dialogue.Array.data[4]'
+      value: 'Sun: we can go anywhere!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3797252729903464790, guid: f444655c2a59c614588d7b69512bba94, type: 3}
+      propertyPath: 'Dialogue.Array.data[5]'
+      value: 'Moon: Hold and release the buttons'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3797252729903464790, guid: f444655c2a59c614588d7b69512bba94, type: 3}
+      propertyPath: 'Dialogue.Array.data[6]'
+      value: 'Sun: To pivot around us and launch!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5474283509350003058, guid: f444655c2a59c614588d7b69512bba94, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7014774464317389978, guid: f444655c2a59c614588d7b69512bba94, type: 3}
       propertyPath: target
       value: 

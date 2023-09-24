@@ -26,6 +26,8 @@ public class LevelManager : MonoBehaviour
 
     private LevelStartScreen lss;
 
+    public Tutorial tutorial;
+
     public static LevelManager Instance => _instance;
     private static LevelManager _instance;
 
@@ -48,6 +50,7 @@ public class LevelManager : MonoBehaviour
     private void Awake()
     {
         _instance = this;
+        tutorial = FindFirstObjectByType<Tutorial>(FindObjectsInactive.Include);
 
         TimeSpan.TryParseExact(goldTimeString, @"m\:ss\.fff", CultureInfo.CurrentCulture, out goldTime);
         TimeSpan.TryParseExact(silverTimeString, @"m\:ss\.fff", CultureInfo.CurrentCulture, out silverTime);
@@ -71,15 +74,29 @@ public class LevelManager : MonoBehaviour
         lss = FindFirstObjectByType<LevelStartScreen>(FindObjectsInactive.Include);
         lss.gameObject.SetActive(true);
         lss.SetLevelTitle(levelName);
-        yield return new WaitForSeconds(2f);
 
-        GameManager.Instance.PauseControl.Register();
-        GameManager.Instance.PauseControl.ToGameplay();
-        if (AudioManager.Instance.targetSong.name != music)
+        if (music != "" && AudioManager.Instance.targetSong.name != music)
         {
             AudioManager.Instance.PlayMusic(music);
         }
+
+        if (tutorial.gameObject.activeInHierarchy)
+        {
+            tutorial.Advance();
+            while (!tutorial.IsDone)
+            {
+                yield return null;
+            }
+
+            tutorial.gameObject.SetActive(false);
+        }
+
+        yield return new WaitForSeconds(0.5f);
+
         lss.GoTime();
+        GameManager.Instance.PauseControl.Register();
+        GameManager.Instance.PauseControl.ToGameplay();
+
 
         yield return null;
     }
@@ -101,7 +118,7 @@ public class LevelManager : MonoBehaviour
     public void OnPause(bool pause)
     {
         PlayerController.freeze = pause;
-        if (lss != null)
+        if (lss != null && pause)
         {
             lss.gameObject.SetActive(false);
         }

@@ -8164,6 +8164,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3797252729903464790, guid: f444655c2a59c614588d7b69512bba94, type: 3}
+      propertyPath: SunShowing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3797252729903464790, guid: f444655c2a59c614588d7b69512bba94, type: 3}
+      propertyPath: Dialogue.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3797252729903464790, guid: f444655c2a59c614588d7b69512bba94, type: 3}
+      propertyPath: 'Dialogue.Array.data[0]'
+      value: 'Sun: With the up and down arrows'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3797252729903464790, guid: f444655c2a59c614588d7b69512bba94, type: 3}
+      propertyPath: 'Dialogue.Array.data[1]'
+      value: 'Moon: We can get closer and farther'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3797252729903464790, guid: f444655c2a59c614588d7b69512bba94, type: 3}
+      propertyPath: 'Dialogue.Array.data[2]'
+      value: 'Sun: Being farther apart'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3797252729903464790, guid: f444655c2a59c614588d7b69512bba94, type: 3}
+      propertyPath: 'Dialogue.Array.data[3]'
+      value: 'Moon: Makes us go faster!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5474283509350003058, guid: f444655c2a59c614588d7b69512bba94, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7014774464317389978, guid: f444655c2a59c614588d7b69512bba94, type: 3}
       propertyPath: target
       value: 

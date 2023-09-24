@@ -40,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -116,18 +116,18 @@ TextureImporter:
       name: talk guys_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 13
-        width: 22
-        height: 22
+        x: 0
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b379a1ce7fd8d9580800000000000000
+      spriteID: e60d53bc275a6564cb5205d881d80269
       internalID: -8818736399363958981
       vertices: []
       indices: 
@@ -137,18 +137,18 @@ TextureImporter:
       name: talk guys_1
       rect:
         serializedVersion: 2
-        x: 60
-        y: 12
-        width: 24
-        height: 24
+        x: 48
+        y: 0
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3e0cfe3c1f7902b70800000000000000
+      spriteID: 9b5d5c68bf904fc47a3d0843d8e6c019
       internalID: 8872258330550059235
       vertices: []
       indices: 
@@ -157,14 +157,16 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e72d04d5545d89540b283a0f4c689abc
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      talk guys_0: -8818736399363958981
+      talk guys_1: 8872258330550059235
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
