@@ -515,6 +515,18 @@ PrefabInstance:
       propertyPath: levelName
       value: Catch a Ride
       objectReference: {fileID: 0}
+    - target: {fileID: 912667142077111707, guid: 0bcadbbb40dfd7b488babcdee37c219c, type: 3}
+      propertyPath: goldTimeString
+      value: 0:9.000
+      objectReference: {fileID: 0}
+    - target: {fileID: 912667142077111707, guid: 0bcadbbb40dfd7b488babcdee37c219c, type: 3}
+      propertyPath: bronzeTimeString
+      value: 0:28.000
+      objectReference: {fileID: 0}
+    - target: {fileID: 912667142077111707, guid: 0bcadbbb40dfd7b488babcdee37c219c, type: 3}
+      propertyPath: silverTimeString
+      value: 0:16.000
+      objectReference: {fileID: 0}
     - target: {fileID: 2237194833435130592, guid: 0bcadbbb40dfd7b488babcdee37c219c, type: 3}
       propertyPath: m_Size.y
       value: 31
