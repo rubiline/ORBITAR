@@ -22,7 +22,7 @@ public class PlayerCollision : MonoBehaviour
     {
         if (collision.collider.CompareTag("Wall"))
         {
-            player.Die();
+            player.Die(collision.otherCollider.transform.parent == player);
         }
         
         if (collision.collider.CompareTag("Bouncy"))
