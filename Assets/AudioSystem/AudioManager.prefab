@@ -74,6 +74,10 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 585e88109cf620e4fbff391b3806cb12, type: 3}
     channel: 0
     looping: 0
+  - name: Sparkle
+    clip: {fileID: 8300000, guid: 46e95f029b29f2a47836b5878f1cc936, type: 3}
+    channel: 1
+    looping: 0
   music:
   - name: DISTANT_NEBULA
     hasIntro: 0
