@@ -54,6 +54,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Stage 3-2.unity
     guid: fdbd4fcfe2f75c64bafaf5a32c7bdfd9
   - enabled: 1
+    path: Assets/Scenes/Levels/Stage 3-3.unity
+    guid: 35b603e89485e7f4f9707c779f7706ea
+  - enabled: 1
     path: Assets/Scenes/Levels/Don't Fall!.unity
     guid: 0a331a74ae1f37a46a44a9b2e9f79cb8
   m_configObjects: {}
