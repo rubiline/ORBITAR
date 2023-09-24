@@ -19,6 +19,9 @@ public class GameManager : MonoBehaviour
     public string CurrentCutscene;
     public PauseControl PauseControl;
 
+    public List<Sprite> palettes;
+    [SerializeField] private int paletteIdx = 0;
+
     private void Awake()
     {
         if (Instance != null)
@@ -30,6 +33,7 @@ public class GameManager : MonoBehaviour
         }
 
         GBMaterial = GBMesh.material;
+        GBMaterial.SetTexture("_Palette", palettes[paletteIdx].texture);
     }
 
     public void LoadScene(string sceneName)
@@ -55,6 +59,12 @@ public class GameManager : MonoBehaviour
     public void ResetLevel()
     {
         LoadScene(currentLoadedScene);
+    }
+
+    public void SwapPalette()
+    {
+        paletteIdx = (paletteIdx + 1) % palettes.Count;
+        GBMaterial.SetTexture("_Palette", palettes[paletteIdx].texture);
     }
 
     private IEnumerator LoadAnimation(string scene)
