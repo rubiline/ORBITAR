@@ -217,58 +217,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7727650154633646717, guid: 4d0ccc3384285cf45829abfca610c5cd, type: 3}
-      propertyPath: effects.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7727650154633646717, guid: 4d0ccc3384285cf45829abfca610c5cd, type: 3}
-      propertyPath: effects.Array.data[2].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 500ab280914b261458bfa2caf9d27f23, type: 3}
-    - target: {fileID: 7727650154633646717, guid: 4d0ccc3384285cf45829abfca610c5cd, type: 3}
-      propertyPath: effects.Array.data[2].name
-      value: select
-      objectReference: {fileID: 0}
-    - target: {fileID: 7727650154633646717, guid: 4d0ccc3384285cf45829abfca610c5cd, type: 3}
-      propertyPath: effects.Array.data[3].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 85fa3f4c71bf95e4d8e598bd82c181c0, type: 3}
-    - target: {fileID: 7727650154633646717, guid: 4d0ccc3384285cf45829abfca610c5cd, type: 3}
-      propertyPath: effects.Array.data[3].name
-      value: tick
-      objectReference: {fileID: 0}
-    - target: {fileID: 7727650154633646717, guid: 4d0ccc3384285cf45829abfca610c5cd, type: 3}
-      propertyPath: effects.Array.data[4].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 71567e83ffaea614b91542689b4a8a84, type: 3}
-    - target: {fileID: 7727650154633646717, guid: 4d0ccc3384285cf45829abfca610c5cd, type: 3}
-      propertyPath: effects.Array.data[4].name
-      value: explode
-      objectReference: {fileID: 0}
-    - target: {fileID: 7727650154633646717, guid: 4d0ccc3384285cf45829abfca610c5cd, type: 3}
-      propertyPath: effects.Array.data[5].clip
-      value: 
-      objectReference: {fileID: 8300000, guid: fdf93485f0ded2043ba2403d9d212630, type: 3}
-    - target: {fileID: 7727650154633646717, guid: 4d0ccc3384285cf45829abfca610c5cd, type: 3}
-      propertyPath: effects.Array.data[5].name
-      value: cancel
-      objectReference: {fileID: 0}
-    - target: {fileID: 7727650154633646717, guid: 4d0ccc3384285cf45829abfca610c5cd, type: 3}
-      propertyPath: effects.Array.data[2].channel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7727650154633646717, guid: 4d0ccc3384285cf45829abfca610c5cd, type: 3}
-      propertyPath: effects.Array.data[3].channel
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7727650154633646717, guid: 4d0ccc3384285cf45829abfca610c5cd, type: 3}
-      propertyPath: effects.Array.data[4].channel
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7727650154633646717, guid: 4d0ccc3384285cf45829abfca610c5cd, type: 3}
-      propertyPath: effects.Array.data[5].channel
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
