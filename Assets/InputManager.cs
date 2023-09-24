@@ -49,7 +49,7 @@ public class InputManager : MonoBehaviour
 
     private void DoDie(CallbackContext ctx)
     {
-        controller.Die();
+        controller.Die(true);
     }
 
     private void DoA(CallbackContext ctx)

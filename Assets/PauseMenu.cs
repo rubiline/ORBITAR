@@ -26,6 +26,6 @@ public class PauseMenu : MonoBehaviour
             new MenuItem("QUIT", QuitLevel),
         };
 
-        MenuManager.Instance.CreateMenu(menuPrefab, "", items, 4, new Vector2(0, 1));
+        MenuManager.Instance.CreateMenu(menuPrefab, "", items, 4, new Vector2(0, 0));
     }
 }

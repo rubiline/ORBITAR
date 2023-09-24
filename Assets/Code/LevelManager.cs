@@ -135,8 +135,19 @@ public class LevelManager : MonoBehaviour
         string stage = GameManager.Instance.currentLoadedScene;
 
         PlayerPrefs.SetInt(stage + "_completed", 1);
-        PlayerPrefs.SetString(stage + "_time", currentTime.ToString(@"m\:ss\.fff"));
-        PlayerPrefs.SetInt(stage + "_medal", (int)res);
+
+        string highScore = PlayerPrefs.GetString(stage + "_time", "");
+        TimeSpan highScoreTime;
+        
+        if (highScore != "" && TimeSpan.TryParseExact(highScore, @"m\:ss\.fff", CultureInfo.CurrentCulture, out highScoreTime) && highScoreTime > currentTime)
+        {
+            PlayerPrefs.SetString(stage + "_time", currentTime.ToString(@"m\:ss\.fff"));
+            PlayerPrefs.SetInt(stage + "_medal", (int)res);
+        } else if (highScore == "")
+        {
+            PlayerPrefs.SetString(stage + "_time", currentTime.ToString(@"m\:ss\.fff"));
+            PlayerPrefs.SetInt(stage + "_medal", (int)res);
+        }
 
         return res;
     }
