@@ -26,7 +26,7 @@ public class DialogueTextBox
 
     public void ClearText()
     {
-        StopCoroutine(text);
+        if (text != null) StopCoroutine(text);
         actualText = "";
         logTextBox.text = "";
     }
@@ -46,6 +46,9 @@ public class DialogueTextBox
             //set to go to the next
             index += 1;
             text = StartCoroutine(PauseBetweenChars(letter));
+        } else
+        {
+            text = null;
         }
     }
 

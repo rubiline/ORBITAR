@@ -63,6 +63,13 @@ public class CutsceneManager : MonoBehaviour
         }
     }
 
+    public void ShowBoxes()
+    {
+        if (_currentCutscene.ShowBox1) ShowBox(DialogueBoxList[0]);
+        if (_currentCutscene.ShowBox2) ShowBox(DialogueBoxList[1]);
+        if (_currentCutscene.ShowBox3) ShowBox(DialogueBoxList[2]);
+    }
+
     public void Advance()
     {
         if (_imageIndex < _currentCutscene.Slideshow.Count)

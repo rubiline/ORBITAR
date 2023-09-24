@@ -26,17 +26,17 @@ MonoBehaviour:
   - {fileID: 732581709833602448, guid: ff1da2a2a6dec88428d5f01811df1a39, type: 3}
   Text:
   - Text: 'Ah. The Earth has '
-    Box: 0
+    Box: 1
   - Text: finally exploded.
-    Box: 0
+    Box: 1
   - Text: 'Mm. Was it always going '
-    Box: 1
-  - Text: to do that?
-    Box: 1
-  - Text: Indeed, indeed.
     Box: 0
-  - Text: ...
+  - Text: to do that?
+    Box: 0
+  - Text: Indeed, indeed.
     Box: 1
+  - Text: ...
+    Box: 0
   - Text: But I orbit that!
     Box: 0
   - Text: 'Yes, so do I. '
