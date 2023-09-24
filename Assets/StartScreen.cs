@@ -6,6 +6,10 @@ public class StartScreen : MonoBehaviour
 {
     [SerializeField] private MenuManager menuManager;
 
+    private void Start()
+    {
+        AudioManager.Instance.PlayMusic("THEME_OF_ORBIT");
+    }
     // Update is called once per frame
     void Update()
     {

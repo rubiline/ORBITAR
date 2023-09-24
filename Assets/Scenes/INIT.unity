@@ -218,8 +218,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7727650154633646717, guid: 4d0ccc3384285cf45829abfca610c5cd, type: 3}
+      propertyPath: music.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7727650154633646717, guid: 4d0ccc3384285cf45829abfca610c5cd, type: 3}
       propertyPath: effects.Array.size
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7727650154633646717, guid: 4d0ccc3384285cf45829abfca610c5cd, type: 3}
+      propertyPath: music.Array.data[1].name
+      value: THEME_OF_ORBIT
+      objectReference: {fileID: 0}
+    - target: {fileID: 7727650154633646717, guid: 4d0ccc3384285cf45829abfca610c5cd, type: 3}
+      propertyPath: music.Array.data[2].name
+      value: SELECT_NOVA
       objectReference: {fileID: 0}
     - target: {fileID: 7727650154633646717, guid: 4d0ccc3384285cf45829abfca610c5cd, type: 3}
       propertyPath: effects.Array.data[2].clip
