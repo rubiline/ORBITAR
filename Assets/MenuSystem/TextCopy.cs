@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class TextCopy : MonoBehaviour
 {
-    public TextMeshPro parent;
-    public TextMeshPro text;
+    public TextMeshProUGUI parent;
+    public TextMeshProUGUI text;
 
     void Awake()
     {
-        parent = this.transform.parent.GetComponent<TextMeshPro>();
-        text = this.GetComponent<TextMeshPro>();
+        parent = this.transform.parent.GetComponent<TextMeshProUGUI>();
+        text = this.GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
