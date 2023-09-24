@@ -761,6 +761,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Finish Line
       objectReference: {fileID: 0}
+    - target: {fileID: 8463515464440200006, guid: 98aaa5ce82910d44d9776b6ae47968d0, type: 3}
+      propertyPath: ToLevel
+      value: Title
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -35272,7 +35276,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1784346265515224257, guid: 11fb71ee53e127045a5dd410b4c05d5a, type: 3}
       propertyPath: angularSpeed
-      value: -120
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 1784346265515224257, guid: 11fb71ee53e127045a5dd410b4c05d5a, type: 3}
       propertyPath: gravityDir.y
