@@ -51,7 +51,7 @@ public class TitleMenu : MonoBehaviour
 
         List<MenuItem> items = new List<MenuItem>
         {
-            new MenuItem("START", StartGame)
+            new MenuItem("NEW GAME", StartGame)
         };
 
         string cont = PlayerPrefs.GetString("continue", "");

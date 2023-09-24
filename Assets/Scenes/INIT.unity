@@ -387,58 +387,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5209315310876978169, guid: efe12ff6fdd907a4db0ab8b33f0767ff, type: 3}
-      propertyPath: paletteIdx
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5209315310876978169, guid: efe12ff6fdd907a4db0ab8b33f0767ff, type: 3}
-      propertyPath: palettes.Array.size
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 5209315310876978169, guid: efe12ff6fdd907a4db0ab8b33f0767ff, type: 3}
-      propertyPath: 'palettes.Array.data[0]'
-      value: 
-      objectReference: {fileID: 21300000, guid: c23fcb0eaee0843a7a0f5767b42c89dd, type: 3}
-    - target: {fileID: 5209315310876978169, guid: efe12ff6fdd907a4db0ab8b33f0767ff, type: 3}
-      propertyPath: 'palettes.Array.data[1]'
-      value: 
-      objectReference: {fileID: 21300000, guid: 8d71958fc175540e19d7bff7a136acdb, type: 3}
-    - target: {fileID: 5209315310876978169, guid: efe12ff6fdd907a4db0ab8b33f0767ff, type: 3}
-      propertyPath: 'palettes.Array.data[2]'
-      value: 
-      objectReference: {fileID: 21300000, guid: 23158573bddcd43ab88e9b41b7bd4dd3, type: 3}
-    - target: {fileID: 5209315310876978169, guid: efe12ff6fdd907a4db0ab8b33f0767ff, type: 3}
-      propertyPath: 'palettes.Array.data[3]'
-      value: 
-      objectReference: {fileID: 21300000, guid: 7a5f22fc6b7d94d599a544ecd9eb1bf3, type: 3}
-    - target: {fileID: 5209315310876978169, guid: efe12ff6fdd907a4db0ab8b33f0767ff, type: 3}
-      propertyPath: 'palettes.Array.data[4]'
-      value: 
-      objectReference: {fileID: 21300000, guid: f02df48a2317845d58b54f09f86f0ed4, type: 3}
-    - target: {fileID: 5209315310876978169, guid: efe12ff6fdd907a4db0ab8b33f0767ff, type: 3}
-      propertyPath: 'palettes.Array.data[5]'
-      value: 
-      objectReference: {fileID: 21300000, guid: 5cd55228c4c5d436694bc6c85a52048b, type: 3}
-    - target: {fileID: 5209315310876978169, guid: efe12ff6fdd907a4db0ab8b33f0767ff, type: 3}
-      propertyPath: 'palettes.Array.data[6]'
-      value: 
-      objectReference: {fileID: 21300000, guid: 5b4e5301017474c38b97559e2654e097, type: 3}
-    - target: {fileID: 5209315310876978169, guid: efe12ff6fdd907a4db0ab8b33f0767ff, type: 3}
-      propertyPath: 'palettes.Array.data[7]'
-      value: 
-      objectReference: {fileID: 21300000, guid: 1d2cde19061d5418a84dd491b0ce85d0, type: 3}
-    - target: {fileID: 5209315310876978169, guid: efe12ff6fdd907a4db0ab8b33f0767ff, type: 3}
-      propertyPath: 'palettes.Array.data[8]'
-      value: 
-      objectReference: {fileID: 21300000, guid: 351096eacf20640089e6c99e07b77d46, type: 3}
-    - target: {fileID: 5209315310876978169, guid: efe12ff6fdd907a4db0ab8b33f0767ff, type: 3}
-      propertyPath: 'palettes.Array.data[9]'
-      value: 
-      objectReference: {fileID: 21300000, guid: b4ef6153558844341815ed121d0a3897, type: 3}
-    - target: {fileID: 5209315310876978169, guid: efe12ff6fdd907a4db0ab8b33f0767ff, type: 3}
-      propertyPath: 'palettes.Array.data[10]'
-      value: 
-      objectReference: {fileID: 21300000, guid: 6ba03bbc006834c97bcf5d8019f2cb20, type: 3}
     - target: {fileID: 6988509428377914777, guid: efe12ff6fdd907a4db0ab8b33f0767ff, type: 3}
       propertyPath: m_Name
       value: GameManager

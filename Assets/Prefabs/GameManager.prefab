@@ -47,6 +47,7 @@ MonoBehaviour:
   PauseButton: {fileID: -2368505764184308109, guid: 0dbe3ec4ec1664442950e68c8ae61e8a, type: 3}
   Gameplay: {fileID: 0}
   LevelManager: {fileID: 0}
+  PauseMenu: {fileID: 0}
 --- !u!1 &6988509428377914777
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,10 +94,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0acc35bba7872e54b9a8129bb663ef31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentLoadedScene: 
+  _levelSelect: 0
   GBMesh: {fileID: 8348269751856312379}
   GBMaterial: {fileID: 0}
   CurrentCutscene: Intro
   PauseControl: {fileID: 7129877738541500024}
+  palettes:
+  - {fileID: 21300000, guid: c23fcb0eaee0843a7a0f5767b42c89dd, type: 3}
+  - {fileID: 21300000, guid: 8d71958fc175540e19d7bff7a136acdb, type: 3}
+  - {fileID: 21300000, guid: 23158573bddcd43ab88e9b41b7bd4dd3, type: 3}
+  - {fileID: -3757950353058786431, guid: aefbbda3a53ec284ea4d97fa96216bd4, type: 3}
+  - {fileID: -5358245785765320100, guid: a8dd2497637b59141a0025718e990257, type: 3}
+  - {fileID: 7577899632432214664, guid: 9387a986de4530847b60ed46a9cb192a, type: 3}
+  - {fileID: 21300000, guid: 5b4e5301017474c38b97559e2654e097, type: 3}
+  - {fileID: -5799971863086062057, guid: b4ead24484a9e0248add56ef453d23cf, type: 3}
+  - {fileID: 3577868192980879374, guid: e345e081add2f1049abffa84b1a6114e, type: 3}
+  - {fileID: 4527740616766669767, guid: 6a65837576be43c4790976f7088799b4, type: 3}
+  - {fileID: 21300000, guid: 6ba03bbc006834c97bcf5d8019f2cb20, type: 3}
+  paletteIdx: 0
 --- !u!1001 &8837320729312755948
 PrefabInstance:
   m_ObjectHideFlags: 0

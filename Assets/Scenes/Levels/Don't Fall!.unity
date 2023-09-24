@@ -319,6 +319,18 @@ PrefabInstance:
       propertyPath: levelName
       value: Don't Fall!
       objectReference: {fileID: 0}
+    - target: {fileID: 912667142077111707, guid: 0bcadbbb40dfd7b488babcdee37c219c, type: 3}
+      propertyPath: goldTimeString
+      value: 0:47.000
+      objectReference: {fileID: 0}
+    - target: {fileID: 912667142077111707, guid: 0bcadbbb40dfd7b488babcdee37c219c, type: 3}
+      propertyPath: bronzeTimeString
+      value: 1:20.000
+      objectReference: {fileID: 0}
+    - target: {fileID: 912667142077111707, guid: 0bcadbbb40dfd7b488babcdee37c219c, type: 3}
+      propertyPath: silverTimeString
+      value: 1:00.000
+      objectReference: {fileID: 0}
     - target: {fileID: 2237194833435130592, guid: 0bcadbbb40dfd7b488babcdee37c219c, type: 3}
       propertyPath: m_Tiles.Array.size
       value: 6
