@@ -56,7 +56,7 @@ MonoBehaviour:
     looping: 0
   - name: select
     clip: {fileID: 8300000, guid: fea2d9f4ed352d24da0f547fe643e3b8, type: 3}
-    channel: 0
+    channel: 1
     looping: 0
   - name: tick
     clip: {fileID: 8300000, guid: 80b8d8d5e5395774d8f813310e44814d, type: 3}
@@ -76,6 +76,10 @@ MonoBehaviour:
     looping: 0
   music:
   - name: DISTANT_NEBULA
+    hasIntro: 0
+  - name: THEME_OF_ORBIT
+    hasIntro: 0
+  - name: SELECT_NOVA
     hasIntro: 0
   musicPath: Music
   effectsPath: FX
