@@ -284,8 +284,10 @@ public class PlayerController : MonoBehaviour
         second.GetComponent<Collider2D>().enabled = false;
         first.Lock();
         second.Lock();
+        AudioManager.Instance.PlaySFX("explode");
         first.Explode();
         yield return new WaitForSeconds(0.4f);
+        AudioManager.Instance.PlaySFX("explode");
         second.Explode();
         yield return new WaitForSeconds(0.2f);
         GameManager.Instance.ResetLevel();
