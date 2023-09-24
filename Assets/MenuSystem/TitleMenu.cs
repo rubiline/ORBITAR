@@ -13,16 +13,43 @@ public class TitleMenu : MonoBehaviour
     {
         Action StartGame = () =>
         {
+            GameManager.Instance._levelSelect = false;
             GameManager.Instance.LoadLevel("Stage 1-1");
         };
 
-        List<MenuItem> items = new List<MenuItem>()
+        Action ContinueGame = () =>
         {
-            new MenuItem("START", StartGame),
-            new MenuItem("OPTIONS", null),
-            new MenuItem("QUIT", null)
+            GameManager.Instance._levelSelect = false;
+            GameManager.Instance.LoadLevel(PlayerPrefs.GetString("continue"));
         };
 
+        Action LevelSelect = () =>
+        {
+            GameManager.Instance.LoadScene("LevelSelect");
+        };
+
+        Action Quit = () =>
+        {
+            Application.Quit();
+        };
+
+
+
+
+        List<MenuItem> items = new List<MenuItem>
+        {
+            new MenuItem("START", StartGame)
+        };
+
+        string cont = PlayerPrefs.GetString("continue", "");
+        if (cont != "")
+        {
+            items.Add(new MenuItem("CONTINUE", ContinueGame));
+        }
+        items.Add(new MenuItem("LEVEL SELECT", LevelSelect));
+        //TODO: Options
+        items.Add(new MenuItem("OPTIONS", null));
+        items.Add(new MenuItem("QUIT", Quit));
 
         MenuManager.Instance.CreateMenu(menuPrefab, "", items, 5, new Vector2(0, 0));
     }

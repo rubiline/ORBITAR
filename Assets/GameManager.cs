@@ -7,11 +7,11 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    private string currentLoadedScene = "";
+    public string currentLoadedScene = "";
     public static GameManager Instance => _instance;
     private static GameManager _instance;
 
-    private bool _levelSelect;
+    public bool _levelSelect;
 
     [SerializeField] public MeshRenderer GBMesh;
     [HideInInspector] public Material GBMaterial;
@@ -37,17 +37,19 @@ public class GameManager : MonoBehaviour
         StartCoroutine(LoadAnimation(sceneName));
     }
 
-    public void LoadLevel(string sceneName)
+    public void LoadLevel(string sceneName, bool select = false)
     {
         PauseControl.Deregister();
-        string n = _levelSelect ? "LevelSelect" : sceneName;
+        string n = (_levelSelect) ? "LevelSelect" : sceneName;
+        if (select) _levelSelect = true;
         LoadScene(n);
     }
 
     public void QuitLevel()
     {
         PauseControl.Deregister();
-        LoadScene("Title");
+        string n = _levelSelect ? "LevelSelect" : "Title";
+        LoadScene(n);
     }
 
     public void ResetLevel()
