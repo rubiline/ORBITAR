@@ -10178,8 +10178,8 @@ MonoBehaviour:
   rb: {fileID: 7744258807544965520}
   angularSpeed: 120
   linearSpeed: 0
-  offsetSpeed: 2
-  minimumOffset: 0.5
+  offsetSpeed: 1.8
+  minimumOffset: 0.45
   maximumOffset: 1.75
   gravityDir: {x: 0, y: 0, z: 0}
   gravityPower: 0
