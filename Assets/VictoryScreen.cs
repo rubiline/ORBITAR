@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -71,6 +72,13 @@ public class VictoryScreen : MonoBehaviour
         if (g != null)
         {
             g.SetActive(true);
+            StartCoroutine(Sparkle());
         }
+    }
+
+    private IEnumerator Sparkle()
+    {
+        yield return new WaitForSeconds(0.1f);
+        AudioManager.Instance.PlaySFX("Sparkle");
     }
 }

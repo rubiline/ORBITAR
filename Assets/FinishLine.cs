@@ -23,7 +23,6 @@ namespace Assets
         public void Finish()
         {
             boxCollider.enabled = false;
-
             LevelManager.Instance.OnPause(true);
             victoryScreen.gameObject.SetActive(true);
             victoryScreen.Setup(ToLevel, CutsceneName);
