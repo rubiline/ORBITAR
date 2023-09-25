@@ -22,6 +22,7 @@ public class LevelSelectMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GameManager.Instance._levelSelect = false;
         AudioManager.Instance.PlayMusic("SELECT_NOVA");
         Action<string> Play = (a) =>
         {
