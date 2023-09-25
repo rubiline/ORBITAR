@@ -287,10 +287,18 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2193643287806345712, guid: 11fb71ee53e127045a5dd410b4c05d5a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8872258330550059235, guid: c7f3a8d1e7f3fb0429a92b4f21b8bd29, type: 3}
     - target: {fileID: 2535091407784174481, guid: 11fb71ee53e127045a5dd410b4c05d5a, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3381305472673236016, guid: 11fb71ee53e127045a5dd410b4c05d5a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8818736399363958981, guid: c7f3a8d1e7f3fb0429a92b4f21b8bd29, type: 3}
     - target: {fileID: 4268250741073854098, guid: 11fb71ee53e127045a5dd410b4c05d5a, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -372,7 +380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e0f8e372d06b32498ab11a95d2716c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 55
+  speed: 80
 --- !u!1 &1448289135
 GameObject:
   m_ObjectHideFlags: 0
