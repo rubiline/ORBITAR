@@ -247,6 +247,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 912667142077111707, guid: 0bcadbbb40dfd7b488babcdee37c219c, type: 3}
+      propertyPath: music
+      value: DISTANT_NEBULA
+      objectReference: {fileID: 0}
+    - target: {fileID: 912667142077111707, guid: 0bcadbbb40dfd7b488babcdee37c219c, type: 3}
       propertyPath: levelName
       value: Bubble Space
       objectReference: {fileID: 0}

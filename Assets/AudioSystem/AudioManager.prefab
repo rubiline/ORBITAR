@@ -79,11 +79,13 @@ MonoBehaviour:
     channel: 1
     looping: 0
   music:
-  - name: DISTANT_NEBULA
-    hasIntro: 0
   - name: THEME_OF_ORBIT
     hasIntro: 0
   - name: SELECT_NOVA
+    hasIntro: 0
+  - name: SOLBOUNCE
+    hasIntro: 0
+  - name: DISTANT_NEBULA
     hasIntro: 0
   musicPath: Music
   effectsPath: FX

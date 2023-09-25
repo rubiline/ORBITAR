@@ -135,7 +135,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 912667142077111707, guid: 0bcadbbb40dfd7b488babcdee37c219c, type: 3}
       propertyPath: music
-      value: DISTANT_NEBULA
+      value: SOLBOUNCE
       objectReference: {fileID: 0}
     - target: {fileID: 912667142077111707, guid: 0bcadbbb40dfd7b488babcdee37c219c, type: 3}
       propertyPath: levelName

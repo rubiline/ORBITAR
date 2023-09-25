@@ -483,7 +483,7 @@ GameObject:
   - component: {fileID: 621255811}
   - component: {fileID: 621255814}
   - component: {fileID: 621255813}
-  - component: {fileID: 621255812}
+  - component: {fileID: 621255815}
   m_Layer: 5
   m_Name: Credis
   m_TagString: Untagged
@@ -510,19 +510,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -4.75}
   m_SizeDelta: {x: 15, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &621255812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 621255810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0034e1f994095824e966469dc4d57695, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menuManager: {fileID: 0}
 --- !u!114 &621255813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -652,6 +639,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 621255810}
   m_CullTransparentMesh: 1
+--- !u!114 &621255815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621255810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69836dbcca5afe941bd325845e7e4b03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Credits: {fileID: 380516292}
 --- !u!114 &1100118494196303805
 MonoBehaviour:
   m_ObjectHideFlags: 0
