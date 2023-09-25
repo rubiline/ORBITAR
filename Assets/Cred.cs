@@ -29,5 +29,6 @@ public class Cred
     void LoadTitle()
     {
         GameManager.Instance.LoadScene("Title");
+        Destroy(this.gameObject);
     }
 }
