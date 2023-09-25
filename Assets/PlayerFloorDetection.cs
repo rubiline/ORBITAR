@@ -39,7 +39,7 @@ public class PlayerFloorDetection : MonoBehaviour
     {
         if (collision.CompareTag("MovingPlatform"))
         {
-            if (player.SunLocked && !moon || player.MoonLocked && moon)
+            if (!stuckBody && player.SunLocked && !moon || player.MoonLocked && moon)
             {
                 player.transform.parent = collision.transform;
                 stuckBody = true;
