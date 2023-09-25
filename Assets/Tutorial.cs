@@ -32,6 +32,7 @@ public class Tutorial : MonoBehaviour
     {
         Box.SetText(Dialogue[_index]);
         _index++;
+        AudioManager.Instance.PlaySFX("tick");
 
         if (SunShowing)
         {

@@ -33,6 +33,7 @@ public class CutsceneManager : MonoBehaviour
             waiting = false;
             Director.Resume();
             WaitPrompt.SetActive(false);
+            AudioManager.Instance.PlaySFX("tick");
         }
     }
 
