@@ -87,6 +87,8 @@ MonoBehaviour:
     hasIntro: 0
   - name: DISTANT_NEBULA
     hasIntro: 0
+  - name: SUPERCLUSTER
+    hasIntro: 0
   musicPath: Music
   effectsPath: FX
   targetSong:

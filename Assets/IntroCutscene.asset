@@ -19,39 +19,26 @@ MonoBehaviour:
   - {fileID: 732581709833602448, guid: ff1da2a2a6dec88428d5f01811df1a39, type: 3}
   - {fileID: -6129595065361856029, guid: c58de4d7ec980ce489949ed18a6eed32, type: 3}
   - {fileID: 2688614985576275456, guid: 6554da40fde9c744ba36a352feedacef, type: 3}
+  - {fileID: 7402075421915102227, guid: 880f45179d376e040820387fb63bc10a, type: 3}
   - {fileID: 732581709833602448, guid: ff1da2a2a6dec88428d5f01811df1a39, type: 3}
   - {fileID: -1627096780178665921, guid: 4d8d4d7b4a95e3b4c8408f35086651af, type: 3}
   - {fileID: 7402075421915102227, guid: 880f45179d376e040820387fb63bc10a, type: 3}
   - {fileID: -6129595065361856029, guid: c58de4d7ec980ce489949ed18a6eed32, type: 3}
   - {fileID: 732581709833602448, guid: ff1da2a2a6dec88428d5f01811df1a39, type: 3}
   Text:
-  - Text: 'Ah. The Earth has '
+  - Text: Ah. The Earth has finally exploded.
     Box: 1
-  - Text: finally exploded.
-    Box: 1
-  - Text: 'Mm. Was it always going '
+  - Text: Mm. Why'd it do that?
     Box: 0
-  - Text: to do that?
-    Box: 0
-  - Text: Indeed, indeed.
+  - Text: Well, it had to eventually.
     Box: 1
   - Text: ...
-    Box: 0
+    Box: 1
   - Text: But I orbit that!
     Box: 0
-  - Text: 'Yes, so do I. '
+  - Text: Yes, so do I. That's exactly how that works.
     Box: 1
-  - Text: 'That''s exactly how '
-    Box: 1
-  - Text: that works.
-    Box: 1
-  - Text: Hrmmm...
-    Box: 1
-  - Text: I suppose we must
-    Box: 1
-  - Text: find a new planet
-    Box: 1
-  - Text: to orbit!
+  - Text: Hrmmm... I suppose we must find a new planet to orbit!
     Box: 1
   - Text: Let's go!
     Box: 0
