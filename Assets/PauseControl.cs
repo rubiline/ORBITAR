@@ -13,6 +13,18 @@ public class PauseControl : MonoBehaviour
     void Start()
     {
         PauseButton.action.performed += PauseGame;
+
+    }
+
+    private void OnApplicationFocus(bool focus)
+    {
+        if (Gameplay != null)
+        {
+            if (!LevelManager.Paused)
+            {
+                ToMenu();
+            }
+        }
     }
 
     private void OnDestroy()

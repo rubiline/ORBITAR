@@ -63,7 +63,7 @@ public class LevelManager : MonoBehaviour
         PlayerController = FindFirstObjectByType<PlayerController>();
 
         string stage = GameManager.Instance.currentLoadedScene;
-        PlayerPrefs.SetString("continue", stage);
+        if (!GameManager.Instance._levelSelect) PlayerPrefs.SetString("continue", stage);
 
         StartCoroutine(StartLevel());
     }

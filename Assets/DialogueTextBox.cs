@@ -63,19 +63,19 @@ public class DialogueTextBox
         switch (letter)
         {
             case '.':
-                yield return new WaitForSeconds(0.2f);
-                ReproduceText();
-                yield break;
-            case ',':
-                yield return new WaitForSeconds(0.2f);
-                ReproduceText();
-                yield break;
-            case ' ':
                 yield return new WaitForSeconds(0.1f);
                 ReproduceText();
                 yield break;
-            default:
+            case ',':
+                yield return new WaitForSeconds(0.1f);
+                ReproduceText();
+                yield break;
+            case ' ':
                 yield return new WaitForSeconds(0.05f);
+                ReproduceText();
+                yield break;
+            default:
+                yield return new WaitForSeconds(0.04f);
                 ReproduceText();
                 yield break;
         }
