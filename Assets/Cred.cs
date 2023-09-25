@@ -10,7 +10,7 @@ public class Cred
     // Start is called before the first frame update
     void Start()
     {
-
+        AudioManager.Instance.PlayMusic("SELECT_NOVA");
     }
 
     // Update is called once per frame
