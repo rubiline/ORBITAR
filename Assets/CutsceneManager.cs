@@ -52,6 +52,7 @@ public class CutsceneManager : MonoBehaviour
             _currentCutscene = Instantiate(c);
             Director.playableAsset = _currentCutscene.Timing;
             Director.Play();
+            AudioManager.Instance.PlayMusic(c.Music);
         }
     }
 

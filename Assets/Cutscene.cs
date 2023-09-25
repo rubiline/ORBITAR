@@ -16,6 +16,7 @@ public class Cutscene : ScriptableObject
     public bool ShowBox1;
     public bool ShowBox2;
     public bool ShowBox3;
+    public string Music;
 }
 
 [Serializable]
